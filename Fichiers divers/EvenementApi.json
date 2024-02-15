@@ -1,0 +1,655 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Evenements association",
+    "contact": {
+      "name": "Adil Zaim",
+      "email": "zaimadil2020@hotmail.com"
+    },
+    "version": "v1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000"
+    }
+  ],
+  "paths": {
+    "/evenements": {
+      "get": {
+        "tags": [
+          "evenements"
+        ],
+        "responses": {
+          "200": {
+            "description": "une liste des evenements",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/event"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "evenements"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/event"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "evenement ajouté avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      }
+    },
+    "/evenements/{id}": {
+      "get": {
+        "tags": [
+          "evenements"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retourne un evenement spécifié par l'id",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/event"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "evenements"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/event"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "evenement modifié avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "evenements"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "evenement supprimé avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          },
+          "409": {
+            "description": "evenement ne peut pas être supprimé, contient des inscriptions"
+          }
+        }
+      }
+    },
+    "/membres": {
+      "get": {
+        "tags": [
+          "membres"
+        ],
+        "responses": {
+          "200": {
+            "description": "une liste des membres",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/membre"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "membres"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/membre"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "membre ajouté avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      }
+    },
+    "/membres/{email}": {
+      "get": {
+        "tags": [
+          "membres"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retourne un membre spécifié par l'email",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/membre"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "membres"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/membre"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "membre modifié avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "membres"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "membre supprimé avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          },
+          "409": {
+            "description": "membre n'existe pas"
+          }
+        }
+      }
+    },
+    "/event/{id_event}/inscriptions": {
+      "get": {
+        "tags": [
+          "inscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "id_event",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retourne un tableau d'inscription",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/inscription"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "inscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "id_event",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id_event": {
+                    "type": "integer",
+                    "format": "int32",
+                    "description": "le id de l'evenement concerné par l'inscriptioon"
+                  },
+                  "email_membre": {
+                    "type": "string",
+                    "description": "le mail du memebre concerné par l'inscription"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "inscription effectué avec succés",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code_inscription": {
+                      "type": "string",
+                      "description": "le code de l'inscription qui peut contenir des caractères et des chiffres"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          },
+          "409": {
+            "description": "inscription impossible , nombre max eteint ou le membre est inscrit dans un evenement qui se chevauche avec l'evenement concerné par l'inscription"
+          }
+        }
+      }
+    },
+    "/inscription/event/{id_event}/delete/membre/{id_membre}": {
+      "delete": {
+        "tags": [
+          "inscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "id_event",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "id_membre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "inscription effectué avec succés"
+          },
+          "400": {
+            "description": "requete invalide"
+          },
+          "409": {
+            "description": "l'annulation de l'inscription est impossible , l'evenement est déja passé"
+          }
+        }
+      }
+    },
+    "/evenements/lieux/{id_lieu}": {
+      "get": {
+        "tags": [
+          "evenements"
+        ],
+        "parameters": [
+          {
+            "name": "id_lieu",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "une liste des evenements qi sint lié au lieu passé en paramètre",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/event"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      }
+    },
+    "/evenenements/{id_event}/membres": {
+      "get": {
+        "tags": [
+          "evenements"
+        ],
+        "parameters": [
+          {
+            "name": "id_event",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "une liste des evenements qi sint lié au lieu passé en paramètre",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/event"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      }
+    },
+    "/membre/{id_membre}/events": {
+      "get": {
+        "tags": [
+          "membres"
+        ],
+        "summary": "Get events who this memeber is inscrit",
+        "parameters": [
+          {
+            "name": "id_membre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Members of the event retrieved successfully"
+          },
+          "400": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "event": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int332"
+          },
+          "nom": {
+            "type": "string",
+            "description": "Le nom de l'evenement"
+          },
+          "duree": {
+            "type": "integer",
+            "format": "int32",
+            "description": "La durée de l'evenement"
+          },
+          "nb_max": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Le nombre maximal de participant"
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "La date de l'objet"
+          }
+        }
+      },
+      "membre": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Le mail du membre"
+          },
+          "nom": {
+            "type": "string",
+            "description": "le nom du membre"
+          },
+          "prenom": {
+            "type": "string",
+            "description": "Le prenom du membre"
+          },
+          "password": {
+            "type": "string",
+            "description": "Le mot de passe du membre"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32",
+            "description": "l'age du membre"
+          },
+          "adresse": {
+            "type": "object",
+            "properties": {
+              "ville": {
+                "type": "string",
+                "description": "la ville du membre"
+              },
+              "rue": {
+                "type": "string",
+                "description": "la rue du membre"
+              }
+            }
+          }
+        }
+      },
+      "commentaire": {
+        "type": "object",
+        "properties": {
+          "id_event": {
+            "type": "integer",
+            "description": "l'id de l'evenement concerné par le commentaire"
+          },
+          "email_membre": {
+            "type": "string",
+            "description": "le mail de l'auteur du commentaire"
+          },
+          "contenu": {
+            "type": "string",
+            "description": "le contenu du commentaire"
+          }
+        }
+      },
+      "inscription": {
+        "type": "object",
+        "properties": {
+          "id_event": {
+            "type": "integer",
+            "description": "l'id de l'evenement concerné par le commentaire"
+          },
+          "nom_event": {
+            "type": "string",
+            "description": "le nom de l'evenements"
+          },
+          "email_membre": {
+            "type": "string",
+            "description": "le mail de l'auteur du commentaire"
+          },
+          "nom_membre": {
+            "type": "string",
+            "description": "le nom du membre inscrit"
+          },
+          "prenom_memebre": {
+            "type": "string",
+            "description": "le prenom du membre inscrit"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "evenements",
+      "description": "evenements de l'association"
+    },
+    {
+      "name": "membres",
+      "description": "membres de l'association"
+    },
+    {
+      "name": "inscriptions",
+      "description": "inscriptions des membres dans les evenements au sein de l'association"
+    }
+  ]
+}

@@ -5,5 +5,27 @@
              version="3.0">
   <persistence-unit name="default">
 
+    <class>Entity.EvenementEntity</class>
+    <class>Entity.InscriptionEntity</class>
+    <class>Entity.LieuEntity</class>
+    <class>Entity.MembreEntity</class>
+    <properties>
+      <property name="toplink.jdbc.url" value="jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1"/>
+      <property name="toplink.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+      <property name="toplink.jdbc.user" value="e21905149sql"/>
+      <property name="toplink.jdbc.password" value="YAt8mL09"/>
+      <property name="hibernate.connection.url" value="jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1"/>
+      <property name="hibernate.connection.driver_class" value="org.mariadb.jdbc.Driver"/>
+      <property name="hibernate.connection.username" value="e21905149sql"/>
+      <property name="hibernate.connection.password" value="YAt8mL09"/>
+      <property name="openjpa.ConnectionURL" value="jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1"/>
+      <property name="openjpa.ConnectionDriverName" value="org.mariadb.jdbc.Driver"/>
+      <property name="openjpa.ConnectionUserName" value="e21905149sql"/>
+      <property name="openjpa.ConnectionPassword" value="YAt8mL09"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1"/>
+      <property name="eclipselink.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+      <property name="eclipselink.jdbc.user" value="e21905149sql"/>
+      <property name="eclipselink.jdbc.password" value="YAt8mL09"/>
+    </properties>
   </persistence-unit>
 </persistence>

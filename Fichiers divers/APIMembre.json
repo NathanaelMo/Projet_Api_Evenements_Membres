@@ -1,0 +1,208 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "core membre",
+    "contact": {
+      "name": "hanane",
+      "email": "hananeerraji789@hotmail.com"
+    },
+    "version": "v1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000"
+    }
+  ],
+  "paths": {
+    "/membres": {
+      "get": {
+        "tags": [
+          "membres"
+        ],
+        "responses": {
+          "200": {
+            "description": "une liste des membres",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/membre"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "membres"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/membre"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "membre ajouté avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      }
+    },
+    "/membres/{email}": {
+      "get": {
+        "tags": [
+          "membres"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "retourne un membre spécifié par l'email",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/membre"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "membres"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "email"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/membre"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "membre modifié avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "membres"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "membre supprimé avec succès"
+          },
+          "400": {
+            "description": "requete invalide"
+          },
+          "409": {
+            "description": "membre n'existe pas"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "membre": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Le mail du membre"
+          },
+          "nom": {
+            "type": "string",
+            "description": "le nom du membre"
+          },
+          "prenom": {
+            "type": "string",
+            "description": "Le prenom du membre"
+          },
+          "password": {
+            "type": "string",
+            "description": "Le mot de passe du membre"
+          },
+          "age": {
+            "type": "integer",
+            "format": "int32",
+            "description": "l'age du membre"
+          },
+          "adresse": {
+            "type": "object",
+            "properties": {
+              "ville": {
+                "type": "string",
+                "description": "la ville du membre"
+              },
+              "rue": {
+                "type": "string",
+                "description": "la rue du membre"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "membres",
+      "description": "membres de l'association"
+    }
+  ]
+}

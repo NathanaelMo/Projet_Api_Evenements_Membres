@@ -2,10 +2,10 @@ package DAO;
 
 import Entity.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+
 
 public class DAO_JPA<D> extends DAO {
 
@@ -33,7 +33,7 @@ public class DAO_JPA<D> extends DAO {
   public DAO_JPA() throws DAOException {
     try {
       // charge le gestionnaire d'entités lié à l'unité de persistance "SportsPU"
-      this.emf = Persistence.createEntityManagerFactory("SportsPU");
+      this.emf = Persistence.createEntityManagerFactory("Association");
       this.em = emf.createEntityManager();
     }catch(Exception e){
       throw new DAOException("Problème technique (" + e.getMessage() + ")");

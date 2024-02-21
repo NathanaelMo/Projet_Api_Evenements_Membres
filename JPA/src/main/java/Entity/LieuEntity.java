@@ -3,7 +3,11 @@ package Entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "lieu", schema = "e21905149_db1", catalog = "")
+@Table(name = "lieu", schema = "e21905149_db1")
+@NamedQueries({
+    @NamedQuery(name = "Lieu.findAll", query = "SELECT l FROM LieuEntity l"),
+    @NamedQuery(name = "Lieu.findByIdLieu", query = "SELECT l FROM LieuEntity l WHERE l.idLieu = :idLieu"),
+    @NamedQuery(name = "Inscription.findByEvenement", query = "SELECT d FROM InscriptionEntity d WHERE d.idEvenement = :idEvenement")})
 public class LieuEntity {
   @Basic
   @Column(name = "nom", nullable = false, length = 200)

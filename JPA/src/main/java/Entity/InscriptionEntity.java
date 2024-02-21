@@ -1,19 +1,21 @@
 package Entity;
 
-import jakarta.persistence.Basic;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
-@Table(name = "inscription", schema = "e21905149_db1", catalog = "")
+@Table(name = "inscription", schema = "e21905149_db1")
+@NamedQueries({
+    @NamedQuery(name = "Inscription.findAll", query = "SELECT d FROM InscriptionEntity d"),
+    @NamedQuery(name = "Inscription.findByMembre", query = "SELECT d FROM InscriptionEntity d WHERE d.idMembre = :idMembre"),
+    @NamedQuery(name = "Inscription.findByEvenement", query = "SELECT d FROM InscriptionEntity d WHERE d.idEvenement = :idEvenement")})
 public class InscriptionEntity {
-  @Basic
+  @Id
   @Column(name = "id_membre", nullable = false)
   private int idMembre;
-  @Basic
+  @Id
   @Column(name = "id_evenement", nullable = false)
   private int idEvenement;
+
 
   public int getIdMembre() {
     return idMembre;
@@ -50,4 +52,5 @@ public class InscriptionEntity {
     result = 31 * result + idEvenement;
     return result;
   }
+
 }

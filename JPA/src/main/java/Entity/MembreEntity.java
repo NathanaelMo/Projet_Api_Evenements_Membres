@@ -5,7 +5,11 @@ import jakarta.persistence.*;
 import java.sql.Date;
 
 @Entity
-@Table(name = "membre", schema = "e21905149_db1", catalog = "")
+@Table(name = "membre", schema = "e21905149_db1")
+@NamedQueries({
+    @NamedQuery(name = "Membre.findAll", query = "SELECT m FROM MembreEntity m"),
+    @NamedQuery(name = "Membre.findByIdMembre", query = "SELECT m FROM MembreEntity m WHERE m.idMembre = :idMembre"),
+})
 public class MembreEntity {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id

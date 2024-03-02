@@ -1,0 +1,335 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Lieux association",
+    "description": "les lieux de l'association.\n\n ## <u>Attributs personnalisés :</u>\n - **x-database :** Permet de lister les attributs qui seront appliqués aux champs du côté de la base de données.",
+    "version": "v1.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Lieux",
+      "description": "Lieux des événements"
+    }
+  ],
+  "paths": {
+    "/lieux": {
+      "get": {
+        "tags": [
+          "Lieux"
+        ],
+        "summary": "Récupère la liste des lieux",
+        "description": "Permet de récupérer la liste de tous les lieux.",
+        "operationId": "getAllLieux",
+        "responses": {
+          "200": {
+            "description": "La requête a réussi et a renvoyé la liste des lieux.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/lieu"
+                  },
+                  "uniqueItems": true
+                }
+              }
+            }
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Lieux"
+        ],
+        "summary": "Ajoute un lieu",
+        "description": "Permet d'ajouter un nouveau lieu.",
+        "operationId": "addLieu",
+        "requestBody": {
+          "description": "Toutes les propriétés sont attendues",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "allOf": [
+                  {
+                    "$ref": "#/components/schemas/lieu"
+                  }
+                ],
+                "required": [
+                  "adresse",
+                  "nom",
+                  "capacite"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "La requête a réussi et a renvoyé l'identifiant du nouveau lieu.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/lieu/properties/id"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        }
+      }
+    },
+    "/lieux/{id}": {
+      "get": {
+        "tags": [
+          "Lieux"
+        ],
+        "summary": "Récupère les informations d'un lieu",
+        "description": "Permet de récupérer les informations d'un lieu.",
+        "operationId": "getLieu",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/path-lieu-id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "La requête a réussi et a renvoyé les informations du lieu.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/lieu"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Lieux"
+        ],
+        "summary": "Supprime un lieu",
+        "description": "Permet de supprimer un lieu si ce dernier n'est pas associé à des événements qui ne sont pas terminés.",
+        "operationId": "deleteLieu",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/path-lieu-id"
+          }
+        ],
+        "responses": {
+          "204": {
+            "$ref": "#/components/responses/204"
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "409": {
+            "description": "La requête provoquerait un conflit, car le lieu à supprimer est associé à un événement."
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        }
+      }
+    },
+    "/lieux/{id}/evenements": {
+      "get": {
+        "tags": [
+          "Lieux"
+        ],
+        "summary": "Récupère la liste des événements associés à un lieu",
+        "description": "Permet de récupérer la liste des événements associés à un lieu.",
+        "operationId": "getLieuEvenements",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/path-lieu-id"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "La requête a réussi et a renvoyé liste des événements associés au lieu.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/evenement"
+                  },
+                  "uniqueItems": true
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
+          "404": {
+            "$ref": "#/components/responses/404"
+          },
+          "500": {
+            "$ref": "#/components/responses/500"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "lieu": {
+        "description": "Représente un lieu pour des événements.",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "nullable": false,
+            "readOnly": true,
+            "x-database": {
+              "primaryKey": true,
+              "autoIncrement": true
+            },
+            "description": "Identifiant unique du lieu.",
+            "example": 37
+          },
+          "adresse": {
+            "type": "string",
+            "nullable": false,
+            "description": "Adresse du lieu.",
+            "example": "29 Rue de la Fontaine, 75018 Paris, France"
+          },
+          "nom": {
+            "type": "string",
+            "nullable": false,
+            "description": "Nom du lieu.",
+            "example": "Montmartre"
+          },
+          "capacite": {
+            "type": "integer",
+            "minimum": 1,
+            "nullable": false,
+            "description": "Capacité du lieu.",
+            "example": 350
+          }
+        }
+      },
+      "evenement": {
+        "description": "Représente un événement.",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 0,
+            "nullable": false,
+            "readOnly": true,
+            "x-database": {
+              "primaryKey": true,
+              "autoIncrement": true
+            },
+            "description": "Identifiant unique de l'événement.",
+            "example": 151
+          },
+          "nom": {
+            "type": "string",
+            "nullable": false,
+            "description": "Nom de l'événement.",
+            "example": "Festival Lumières Éclatantes"
+          },
+          "date": {
+            "type": "number",
+            "format": "unix-timestamp",
+            "nullable": false,
+            "description": "Date et heure de début de l'événement.",
+            "example": 1744762855
+          },
+          "duree": {
+            "type": "integer",
+            "minimum": 1,
+            "nullable": false,
+            "description": "Durée de l'événement (en heures ?).",
+            "example": 72
+          },
+          "nb_places": {
+            "type": "integer",
+            "minimum": 1,
+            "nullable": false,
+            "description": "Nombre maximal de participants.",
+            "example": 300
+          },
+          "id_lieu": {
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/lieu/properties/id"
+              }
+            ],
+            "readOnly": false
+          }
+        }
+      }
+    },
+    "parameters": {
+      "path-lieu-id": {
+        "in": "path",
+        "name": "id",
+        "required": true,
+        "schema": {
+          "$ref": "#/components/schemas/lieu/properties/id"
+        }
+      },
+      "path-evenement-id": {
+        "in": "path",
+        "name": "id",
+        "required": true,
+        "schema": {
+          "$ref": "#/components/schemas/evenement/properties/id"
+        }
+      }
+    },
+    "responses": {
+      "200": {
+        "description": "La requête a réussi et a renvoyé du contenu.<br>`Description à modifier.`"
+      },
+      "201": {
+        "description": "La requête a réussi et une nouvelle ressource a été créée.<br>`Description à modifier.`"
+      },
+      "204": {
+        "description": "La requête a réussi et n'a pas renvoyé de contenu."
+      },
+      "400": {
+        "description": "Requête invalide."
+      },
+      "404": {
+        "description": "Ressource non trouvée."
+      },
+      "409": {
+        "description": "La requête provoquerait un conflit.<br>`Description à modifier.`"
+      },
+      "500": {
+        "description": "Erreur interne au serveur."
+      }
+    }
+  }
+}

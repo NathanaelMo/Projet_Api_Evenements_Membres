@@ -1,0 +1,257 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Membre API",
+    "description": "Api_Membre API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://Api_Membre"
+    }
+  ],
+  "paths": {
+    "/membres": {
+      "get": {
+        "summary": "Obtenir tous les membres",
+        "operationId": "getAllEvents",
+        "tags": [
+          "Membre"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Membre"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Créer un nouveau membre",
+        "operationId": "saveMember",
+        "tags": [
+          "Membre"
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Membre"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Membre"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/membres/{id_membre}": {
+      "get": {
+        "summary": "Obtenir un membre par ID",
+        "operationId": "getOneEvent",
+        "tags": [
+          "Membre"
+        ],
+        "parameters": [
+          {
+            "name": "id_membre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Membre"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "summary": "Mettre à jour un membre",
+        "operationId": "updateMember",
+        "tags": [
+          "Membre"
+        ],
+        "parameters": [
+          {
+            "name": "id_membre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Membre"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Membre"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Supprimer un membre",
+        "operationId": "deleteMember",
+        "tags": [
+          "Membre"
+        ],
+        "parameters": [
+          {
+            "name": "id_membre",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/evenements/{id_evenement}/membres": {
+      "get": {
+        "summary": "Obtenir tous les membres d'un événement",
+        "operationId": "getAllMemberOfOneEvent",
+        "tags": [
+          "Membre"
+        ],
+        "parameters": [
+          {
+            "name": "id_evenement",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Membre"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Membre": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "nom": {
+            "type": "string"
+          },
+          "prenom": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "date_naissance": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}

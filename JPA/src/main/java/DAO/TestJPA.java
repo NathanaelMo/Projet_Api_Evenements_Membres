@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 
 public class TestJPA {
 
-  public static void main(String argv[]) throws Exception {
+  public static void main(String[] argv) throws Exception {
 
     // charge le gestionnaire d'entités lié à l'unité de persistance "SportsPU"
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("Association");

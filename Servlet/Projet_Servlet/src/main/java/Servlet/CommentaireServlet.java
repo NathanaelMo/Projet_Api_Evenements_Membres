@@ -4,6 +4,11 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
+import static com.mongodb.MongoClientSettings.getDefaultCodecRegistry;
+import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
+import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
+
 import java.io.IOException;
 import java.util.List;
 
@@ -13,28 +18,56 @@ import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import org.bson.codecs.configuration.CodecProvider;
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.codecs.pojo.PojoCodecProvider;
+
 import DAO.DAO_Exception;
 import DAO.DAO_Lieu;
+import donnees.CommentaireEntity;
 import donnees.LieuEntity;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mongodb.ConnectionString;
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
 
 /**
  * Servlet implementation class LieuServlet
  */
-public class LieuServlet extends HttpServlet {
+public class CommentaireServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
    
-    public LieuServlet() {
+    public CommentaireServlet() {
         super();
     }
     
-    public List<LieuEntity> getListeLieux(HttpServletResponse response) throws IOException {
+    public static void connexionMongoDB() {
+
+		// connexion à la base Mongo 
+		CodecProvider pojoCodecProvider = PojoCodecProvider.builder().automatic(true).build();
+		CodecRegistry pojoCodecRegistry = fromRegistries(getDefaultCodecRegistry(), fromProviders(pojoCodecProvider));
+		
+		ConnectionString connectionString = new ConnectionString("mongodb://obiwan.univ-brest.fr:27017");
+		MongoClient mongoClient = MongoClients.create(connectionString);
+		MongoDatabase database = mongoClient.getDatabase("Commentaires_Menou_Paugam_Monnier").withCodecRegistry(pojoCodecRegistry);
+		System.out.println("Connexion établie\n");
+		
+		//MongoCollection<CommentaireEntity> commentaires = database.getCollection("commentaires", CommentaireEntity.class);
+	}
+    
+    @SuppressWarnings("unchecked")
+	public List<CommentaireEntity> getListeCommentaires(HttpServletResponse response) throws IOException {
+    	
+    	this.connexionMongoDB();
+    	
     	EntityManagerFactory emf = Persistence.createEntityManagerFactory("AssociationPU");
 		EntityManager em = emf.createEntityManager();
-		Query requete = (Query) em.createQuery("SELECT l FROM LieuEntity l");
+		Query requete = (Query) em.createQuery("SELECT c FROM CommentaireEntity c");
 		
 		Gson gson = new GsonBuilder().create();
         String jsonLieux = gson.toJson(requete.getResultList());
@@ -45,7 +78,7 @@ public class LieuServlet extends HttpServlet {
         // Écrire la réponse JSON
         response.getWriter().write(jsonLieux);
         
-		return (List<LieuEntity>) requete.getResultList();
+        return (List<CommentaireEntity>) requete.getResultList();
     }
     
     public void insertNewLieu(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -142,8 +175,8 @@ public class LieuServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String operation = request.getParameter("operation");
-		if (operation.equals("listeLieux")) {
-			request.setAttribute("lieux", this.getListeLieux(response));
+		if (operation.equals("listeCommentaires")) {
+			request.setAttribute("lieux", this.getListeCommentaires(response));
 			
 		} else if (operation.equals("ajouterLieu")) {
 			this.insertNewLieu(request, response);

@@ -19,4 +19,14 @@
     <servlet-name>lieux</servlet-name>
     <url-pattern>/lieux</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>commentaires</display-name>
+    <servlet-name>commentaires</servlet-name>
+    <servlet-class>Servlet.AccesMongoDB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>commentaires</servlet-name>
+    <url-pattern>/commentaires</url-pattern>
+  </servlet-mapping>
 </web-app>

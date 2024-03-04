@@ -10,7 +10,7 @@
 
     <h2>Ajouter un lieu</h2>
 
-    <form action="lieux?operation=ajouterLieu" method="post">
+    <form action="../lieux?operation=ajouterLieu" method="post">
         <label for="nom">Nom du lieu:</label>
         <input type="text" id="nom" name="nom" required><br>
 

@@ -43,6 +43,23 @@ public class MembreController {
 	}
 
 	/**
+	 * Method to get the membre based on the evenement ID
+	 */
+	@GetMapping("/evenements/{id_evenement}/membres")
+	public MembreDto getMembreByEvenement(@PathVariable Long id){
+		return membreService.getMembreByEvenement(id);
+	}
+
+
+	/**
+	 * Modify a new Membre in the system
+	 */
+	@PutMapping
+	public MembreDto modifyMembre(final @RequestBody MembreDto membreDto){
+		return membreService.modifyMembre(membreDto);
+	}
+
+	/**
 	 * Delete a membre by it's id
 	 */
 	@DeleteMapping("/{id}")

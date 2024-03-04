@@ -31,9 +31,24 @@ public class MembreServiceImpl implements MembreService {
     }
 
     @Override
+    public MembreDto modifyMembre(MembreDto membreDto) {
+        // Converts the dto to the membre entity
+        Membre membre = membreDtoToEntity(membreDto);
+        // Save the membre entity
+        membre = membreRepository.save(membre);
+        // Return the new dto
+        return membreEntityToDto(membre);
+    }
+
+    @Override
     public MembreDto getMembreById(Long membreId) {
         Membre membre = membreRepository.findById(membreId).orElseThrow(() -> new EntityNotFoundException("membre not found"));
         return membreEntityToDto(membre);
+    }
+
+    @Override
+    public MembreDto getMembreByEvenement(Long evenementId) {
+        return null;
     }
 
     @Override

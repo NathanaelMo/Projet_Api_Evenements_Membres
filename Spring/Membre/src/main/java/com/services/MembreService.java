@@ -11,9 +11,19 @@ public interface MembreService {
     MembreDto saveMembre(MembreDto membreDto);
 
     /**
+     * Sauve a membre
+     */
+    MembreDto modifyMembre(MembreDto membreDto);
+
+    /**
      * Get a membre by it's id
      */
     MembreDto getMembreById(Long membreId);
+
+    /**
+     * Get a membre by it's id
+     */
+    MembreDto getMembreByEvenement(Long evenementId);
 
     /**
      * Delete a membre by it's id

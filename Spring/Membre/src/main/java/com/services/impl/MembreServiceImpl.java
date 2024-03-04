@@ -4,9 +4,10 @@ import com.dtos.MembreDto;
 import com.entities.Membre;
 import com.repositories.MembreRepository;
 import com.services.MembreService;
+import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,9 +22,9 @@ public class MembreServiceImpl implements MembreService {
 
     @Override
     public MembreDto saveMembre(MembreDto membreDto) {
-        // Converts the dto to the dog entity
+        // Converts the dto to the membre entity
         Membre membre = membreDtoToEntity(membreDto);
-        // Save the dog entity
+        // Save the membre entity
         membre = membreRepository.save(membre);
         // Return the new dto
         return membreEntityToDto(membre);
@@ -52,24 +53,32 @@ public class MembreServiceImpl implements MembreService {
     }
 
     /**
-     * Map dog dto to dog entity
+     * Map membre dto to membre entity
      */
     private MembreDto membreEntityToDto(Membre membre){
         MembreDto membreDto = new MembreDto();
-        membreDto.setId(membre.getId());
-        membreDto.setName(membre.getName());
-        membreDto.setRace(membre.getRace());
+        membreDto.setIdMembre(membre.getIdMembre());
+        membreDto.setEmail(membre.getEmail());
+        membreDto.setNom(membre.getNom());
+        membreDto.setPrenom(membre.getPrenom());
+        membreDto.setAdresse(membre.getAdresse());
+        membreDto.setDateNaissance(membre.getDateNaissance());
+        membreDto.setMdp(membre.getMdp());
         return membreDto;
     }
 
     /**
-     * Map dog entity to dog dto
+     * Map membre entity to membre dto
      */
     private Membre membreDtoToEntity(MembreDto membreDto){
         Membre membre = new Membre();
-        membre.setName(membreDto.getName());
-        membre.setId(membreDto.getId());
-        membre.setRace(membreDto.getRace());
+        membre.setIdMembre(membreDto.getIdMembre());
+        membre.setEmail(membreDto.getEmail());
+        membre.setNom(membreDto.getNom());
+        membre.setPrenom(membreDto.getPrenom());
+        membre.setAdresse(membreDto.getAdresse());
+        membre.setDateNaissance(membreDto.getDateNaissance());
+        membre.setMdp(membreDto.getMdp());
         return membre;
     }
 }

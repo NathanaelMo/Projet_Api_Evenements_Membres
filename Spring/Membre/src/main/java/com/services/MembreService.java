@@ -6,22 +6,22 @@ import java.util.List;
 
 public interface MembreService {
     /**
-     * Sauve a dog
+     * Sauve a membre
      */
     MembreDto saveMembre(MembreDto membreDto);
 
     /**
-     * Get a dog by it's id
+     * Get a membre by it's id
      */
     MembreDto getMembreById(Long membreId);
 
     /**
-     * Delete a dog by it's id
+     * Delete a membre by it's id
      */
     boolean deleteMembre(Long membreId);
 
     /**
-     * Get all the dogs
+     * Get all the membres
      */
     List<MembreDto> getAllMembres();
 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Acces lieux avec Vue</title>
+    <link rel="stylesheet" href="css.css" type="text/css">
+</head>
+<body>
+    <main id="app">
+        <h1>Gestion des lieux en Vue</h1>
+        <p>Sélectionnez un lieu dans la liste :</p>
+        <select v-model="leLieu" style="width:250px">
+            <option v-for="lieu in lieux" :value="lieu">
+                {{ lieu.nom }}
+            </option>
+        </select>
+        <div v-show="selectionne">
+            <p><br />Editez ses propriétés :</p>
+            <table>
+                <tr><td>Nom</td><td><input v-model="leLieu.nom"/></td></tr>
+                <tr><td>Adresse</td><td><input v-model="leLieu.adresse"/></td></tr>
+                <tr><td>Capacité maximale</td><td><input v-model="leLieu.nbMaxPers"/></td></tr>
+            </table>
+        </div>
+        <br />
+        <h2>Ajouter un nouveau lieu :</h2>
+        <form action="../lieux?operation=ajouterLieu" method="post">
+	        <label for="nom">Nom du lieu:</label>
+	        <input type="text" id="nom" name="nom" required><br>
+	
+	        <label for="adresse">Adresse:</label>
+	        <input type="text" id="adresse" name="adresse" required><br>
+	
+	        <label for="nbMaxPers">Nombre maximal de personnes:</label>
+	        <input type="number" id="nbMaxPers" name="nbMaxPers" required><br>
+	
+	        <button type="submit">Ajouter</button>
+	    </form>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const Lieux = {
+            data() {
+                return {
+                    selectionne: false,
+                    lieux: [],
+                    leLieu: {},
+                    nouveauLieu: { 'adresse': {} }
+                }
+            },
+            watch: {
+                leLieu(nouvelleValeur, ancienneValeur) {
+                    this.selectionne = true;
+                }
+            },
+            created()  {
+                fetch('http://localhost:8080/Projet_Servlet/lieux?operation=listeLieux')
+                    .then((response) => response.json())
+                    .then((json) => {this.lieux = json});
+            }
+        }
+        const app = Vue.createApp(Lieux).mount('#app')
+    </script>
+</body>
+</html>

@@ -1,48 +1,46 @@
 package DAO;
 
-import donnees.Discipline;
-import donnees.Sport;
-import donnees.Sportif;
-import sportsDAO.*;
+import Entity.*;
 
-public class Sports_JPA_DAOFactory extends SportsDAOFactory {
+public class DAOFactory {
   /**
-   * Le DAO concret en JDBC pour la table Sport
+   * Le DAO concret en JPA pour la table Evenement
    */
-  private DAO_JPA<Sport> daoSport = null;
+  private DAO_JPA<EvenementEntity> daoEvenement= null;
 
   /**
-   * Le DAO concret en JDBC pour la table Discipline
+   * Le DAO concret en JPA pour la table Lieu
    */
-  private DAO_JPA<Discipline> daoDiscipline = null;
+  private DAO_JPA<LieuEntity> daoLieu = null;
 
   /**
-   * Le DAO concret en JDBC pour la table Sportif
+   * Le DAO concret en JPA pour la table Membre
    */
-  private DAO_JPA<Sportif> daoSportif = null;
-  @Override
-  public DAO<Sport> getDAOSport() throws DAOException {
-    if ( this.daoSport==null) {
-      this.daoSport = new DAO_JPA<Sport>();
-      this.daoSport.setClass(Sport.class);
+  private DAO_JPA<MembreEntity> daoMembre = null;
+
+
+  public DAO<MembreEntity> getDAOMembre() throws DAOException {
+    if ( this.daoMembre==null) {
+      this.daoMembre = new DAO_JPA<MembreEntity>();
+      this.daoMembre.setClass(MembreEntity.class);
     }
-    return this.daoSport;
+    return this.daoMembre;
   }
 
-  @Override
-  public DAO<Discipline> getDAODiscipline() throws DAOException {
-    if ( this.daoDiscipline==null) {
-      this.daoDiscipline = new DAO_JPA<Discipline>();
-      this.daoDiscipline.setClass(Discipline.class);
+
+  public DAO<LieuEntity> getDAOLieu() throws DAOException {
+    if ( this.daoLieu==null) {
+      this.daoLieu = new DAO_JPA<LieuEntity>();
+      this.daoLieu.setClass( LieuEntity.class);
     }
-    return this.daoDiscipline;
+    return this.daoLieu;
   }
 
-  public DAO<Sportif> getDAOSportif() throws DAOException {
-    if ( this.daoSportif==null) {
-      this.daoSportif = new DAO_JPA<Sportif>();
-      this.daoSportif.setClass(Sportif.class);
+  public DAO<EvenementEntity> getDAOEvenement() throws DAOException {
+    if ( this.daoEvenement==null) {
+      this.daoEvenement = new DAO_JPA<EvenementEntity>();
+      this.daoEvenement.setClass( EvenementEntity.class);
     }
-    return this.daoSportif;
+    return this.daoEvenement;
   }
 }

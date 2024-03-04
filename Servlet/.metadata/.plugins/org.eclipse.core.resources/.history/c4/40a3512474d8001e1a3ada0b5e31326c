@@ -1,0 +1,13 @@
+package donnees;
+
+import java.io.Serializable;
+
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class InscriptionEntityPrimaryKey implements Serializable {
+    private int idMembre;
+    private int idEvenement;
+
+    // Constructeur, getters, setters, equals, hashCode, etc.
+}

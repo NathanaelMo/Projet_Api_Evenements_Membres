@@ -23,17 +23,14 @@
       <artifactId>jakarta.servlet-api</artifactId>
       <version>6.0.0</version>
       <scope>provided</scope>
-    </dependency><dependency>
-      <groupId>org.hibernate.orm</groupId>
-      <artifactId>hibernate-core</artifactId>
-      <version>6.3.1.Final</version>
     </dependency>
+
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-runtime</artifactId>
       <version>4.0.3</version>
     </dependency>
-<dependency>
+    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-api</artifactId>
       <version>${junit.version}</version>
@@ -45,6 +42,7 @@
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
+
       <dependency>
           <groupId>com.mchange</groupId>
           <artifactId>c3p0</artifactId>
@@ -54,6 +52,11 @@
           <groupId>org.hibernate.orm</groupId>
           <artifactId>hibernate-c3p0</artifactId>
           <version>6.1.7.Final</version>
+      </dependency>
+      <dependency>
+          <groupId>jakarta.persistence</groupId>
+          <artifactId>jakarta.persistence-api</artifactId>
+          <version>3.1.0</version>
       </dependency>
   </dependencies>
 

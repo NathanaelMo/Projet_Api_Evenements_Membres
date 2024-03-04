@@ -11,9 +11,9 @@ import java.time.LocalDate;
 public class Evenement {
 	@Id
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idEvenement;
+	private Long idEvenement;
 
-	private int idLieu;
+	private Long idLieu;
 
 	private String nom;
 

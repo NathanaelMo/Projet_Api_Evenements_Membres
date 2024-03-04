@@ -69,8 +69,9 @@ public class EvenementServiceImpl implements EvenementService {
         EvenementDto evenementDto = new EvenementDto();
         evenementDto.setIdEvenement(evenement.getIdEvenement());
         evenementDto.setIdLieu(evenement.getIdLieu());
+        evenementDto.setNom(evenement.getNom());
         evenementDto.setDate(evenement.getDate());
-        evenementDto.setDuree(evenementDto.getDuree());
+        evenementDto.setDuree(evenement.getDuree());
         evenementDto.setNbMaxPers(evenement.getNbMaxPers());
         return evenementDto;
     }
@@ -82,6 +83,7 @@ public class EvenementServiceImpl implements EvenementService {
         Evenement evenement = new Evenement();
         evenement.setIdEvenement(evenementDto.getIdEvenement());
         evenement.setIdLieu(evenementDto.getIdLieu());
+        evenement.setNom(evenementDto.getNom());
         evenement.setDate(evenementDto.getDate());
         evenement.setDuree(evenementDto.getDuree());
         evenement.setNbMaxPers(evenementDto.getNbMaxPers());

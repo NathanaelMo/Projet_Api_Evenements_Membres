@@ -8,9 +8,9 @@ import java.time.LocalDate;
 @Data
 public class EvenementDto {
 
-	private int idEvenement;
+	private Long idEvenement;
 
-	private int idLieu;
+	private Long idLieu;
 
 	private String nom;
 

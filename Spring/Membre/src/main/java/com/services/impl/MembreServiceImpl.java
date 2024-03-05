@@ -29,6 +29,12 @@ public class MembreServiceImpl implements MembreService {
     public MembreDto saveMembre(MembreDto membreDto) {
         // Converts the dto to the membre entity
         Membre membre = membreDtoToEntity(membreDto);
+        List<MembreDto> membres = this.getAllMembres();
+        for(int i = 0;i<membres.size();i++){
+            if(membres.get(i).getIdMembre() == membreDto.getIdMembre()){
+                return null;
+            }
+        }
         // Save the membre entity
         membre = membreRepository.save(membre);
         // Return the new dto
@@ -39,6 +45,7 @@ public class MembreServiceImpl implements MembreService {
     public MembreDto modifyMembre(MembreDto membreDto) {
         // Converts the dto to the membre entity
         Membre membre = membreDtoToEntity(membreDto);
+        this.getMembreById(membreDto.getIdMembre());
         // Save the membre entity
         membre = membreRepository.save(membre);
         // Return the new dto
@@ -68,6 +75,7 @@ public class MembreServiceImpl implements MembreService {
 
     @Override
     public boolean deleteMembre(Long membreId) {
+        this.getMembreById(membreId);
         membreRepository.deleteById(membreId);
         return true;
     }

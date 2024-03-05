@@ -1,10 +1,12 @@
 package com.services.impl;
 import com.dtos.InscriptionDto;
+import com.dtos.MembreDto;
 import com.entities.Evenement;
 import com.dtos.EvenementDto;
 import com.repositories.EvenementRepository;
 import com.services.EvenementService;
 import com.services.InscriptionService;
+import com.services.MembreService;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -17,15 +19,28 @@ public class EvenementServiceImpl implements EvenementService {
 
     private final InscriptionService inscriptionService;
 
-    public EvenementServiceImpl(EvenementRepository evenementRepository, InscriptionService inscriptionService){
+    private final MembreService membreService;
+
+
+    public EvenementServiceImpl(EvenementRepository evenementRepository, InscriptionService inscriptionService, MembreService membreService){
         this.evenementRepository = evenementRepository;
         this.inscriptionService = inscriptionService;
+        this.membreService = membreService;
     }
 
     @Override
     public EvenementDto saveEvenement(EvenementDto evenementDto) {
         // Converts the dto to the membre entity
         Evenement evenement = evenementDtoToEntity(evenementDto);
+        List<EvenementDto> evenements = this.getAllEvenements();
+        for(int i = 0;i<evenements.size();i++){
+            if(evenements.get(i).getIdEvenement() == evenementDto.getIdEvenement()){
+                return null;
+            }
+            if(evenements.get(i).getDate().equals(evenementDto.getDate()) && evenements.get(i).getIdLieu() == evenementDto.getIdLieu()){
+                return null;
+            }
+        }
         // Save the membre entity
         evenement = evenementRepository.save(evenement);
         // Return the new dto
@@ -37,6 +52,15 @@ public class EvenementServiceImpl implements EvenementService {
         // Converts the dto to the evenement entity
         Evenement evenement = evenementDtoToEntity(evenementDto);
         // Save the evenement entity
+        this.getEvenementById(evenementDto.getIdEvenement());
+        List<EvenementDto> evenements = this.getAllEvenements();
+        for(int i = 0;i<evenements.size();i++){
+            if(evenements.get(i).getIdEvenement() != evenementDto.getIdEvenement()){
+                if(evenements.get(i).getDate().equals(evenementDto.getDate()) && evenements.get(i).getIdLieu() == evenementDto.getIdLieu()){
+                    return null;
+                }
+            }
+        }
         evenement = evenementRepository.save(evenement);
         // Return the new dto
         return evenementEntityToDto(evenement);
@@ -68,6 +92,20 @@ public class EvenementServiceImpl implements EvenementService {
         InscriptionDto inscription = new InscriptionDto();
         inscription.setIdEvenement(id);
         inscription.setIdMembre(id2);
+        this.getEvenementById(id);
+        this.membreService.getMembreById(id2);
+        List<EvenementDto> evenements = this.getEvenementByMembre(id2);
+        List<InscriptionDto> inscriptions = this.inscriptionService.getInscriptionByIdEvenement(id);
+        for(int i = 0;i<inscriptions.size();i++){
+            if(inscriptions.get(i).getIdMembre() == id2){
+                return null;
+            }
+        }
+        for(int i = 0;i<evenements.size();i++){
+            if(evenements.get(i).getDate() == this.getEvenementById(id).getDate()){
+                return null;
+            }
+        }
         inscriptionService.saveInscription(inscription);
         return inscription;
     }

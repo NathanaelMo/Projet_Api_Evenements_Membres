@@ -1,0 +1,771 @@
+05-Mar-2024 14:43:22.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 14:43:22.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 14:43:22.322 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 14:43:22.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 14:43:22.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 14:43:22.324 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 14:43:22.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 14:43:22.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 14:43:22.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 14:43:22.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:43:22.326 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:43:22.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 14:43:22.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 14:43:22.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 14:43:22.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 14:43:22.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 14:43:22.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 14:43:22.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 14:43:22.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 14:43:22.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 14:43:22.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 14:43:22.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:43:22.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:43:22.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 14:43:22.382 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 14:43:22.383 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 14:43:22.409 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 14:43:23.038 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 14:43:23.100 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1258] millisecondes
+05-Mar-2024 14:43:23.282 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 14:43:23.283 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 14:43:23.370 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet_Lieu_Commentaire.war] de l'application web
+05-Mar-2024 14:43:31.279 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 14:43:32.126 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [730] millisecondes
+05-Mar-2024 14:43:32.192 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet_Lieu_Commentaire.war] s'est terminé en [8 823] ms
+05-Mar-2024 14:43:32.195 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 14:43:32.278 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [84] ms
+05-Mar-2024 14:43:32.280 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 14:43:33.333 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [1 053] ms
+05-Mar-2024 14:43:33.336 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 14:43:33.503 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [167] ms
+05-Mar-2024 14:43:33.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 14:43:33.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [77] ms
+05-Mar-2024 14:43:33.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 14:43:33.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [57] ms
+05-Mar-2024 14:43:33.656 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 14:43:34.433 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [11331] millisecondes
+05-Mar-2024 14:52:29.576 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 14:52:29.588 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 14:53:16.352 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 14:53:16.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 14:53:16.360 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 14:53:16.360 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 14:53:16.360 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 14:53:16.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 14:53:16.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 14:53:16.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 14:53:16.361 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 14:53:16.362 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:53:16.362 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:53:16.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 14:53:16.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 14:53:16.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 14:53:16.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 14:53:16.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 14:53:16.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 14:53:16.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 14:53:16.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 14:53:16.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 14:53:16.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 14:53:16.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:53:16.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 14:53:16.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 14:53:16.399 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 14:53:16.400 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 14:53:16.409 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 14:53:17.052 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 14:53:17.099 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1271] millisecondes
+05-Mar-2024 14:53:17.239 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 14:53:17.240 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 14:53:17.281 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] de l'application web
+05-Mar-2024 14:53:25.437 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 14:53:26.223 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [613] millisecondes
+05-Mar-2024 14:53:26.254 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] s'est terminé en [8 973] ms
+05-Mar-2024 14:53:26.254 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 14:53:26.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [85] ms
+05-Mar-2024 14:53:26.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 14:53:26.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [541] ms
+05-Mar-2024 14:53:26.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 14:53:26.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [63] ms
+05-Mar-2024 14:53:26.943 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 14:53:26.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [47] ms
+05-Mar-2024 14:53:26.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 14:53:27.037 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [47] ms
+05-Mar-2024 14:53:27.052 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 14:53:27.726 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [10636] millisecondes
+05-Mar-2024 14:58:51.220 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 14:58:51.232 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 15:00:24.597 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 15:00:24.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 15:00:24.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 15:00:24.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 15:00:24.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 15:00:24.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 15:00:24.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 15:00:24.606 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 15:00:24.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 15:00:24.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:00:24.607 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:00:24.646 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 15:00:24.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 15:00:24.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 15:00:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 15:00:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 15:00:24.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 15:00:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 15:00:24.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 15:00:24.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 15:00:24.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 15:00:24.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:00:24.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:00:24.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 15:00:24.663 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 15:00:24.664 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 15:00:24.685 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 15:00:25.334 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 15:00:25.423 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1312] millisecondes
+05-Mar-2024 15:00:25.559 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 15:00:25.560 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 15:00:25.618 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] de l'application web
+05-Mar-2024 15:00:30.583 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 15:00:31.346 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [659] millisecondes
+05-Mar-2024 15:00:31.432 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] s'est terminé en [5 814] ms
+05-Mar-2024 15:00:31.434 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 15:00:31.480 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [45] ms
+05-Mar-2024 15:00:31.482 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 15:00:31.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [437] ms
+05-Mar-2024 15:00:31.920 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 15:00:32.009 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [88] ms
+05-Mar-2024 15:00:32.010 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 15:00:32.059 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [49] ms
+05-Mar-2024 15:00:32.059 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 15:00:32.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [41] ms
+05-Mar-2024 15:00:32.108 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 15:00:32.777 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [7352] millisecondes
+05-Mar-2024 15:15:07.442 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 15:15:07.453 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 15:15:13.266 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 15:15:13.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 15:15:13.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 15:15:13.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 15:15:13.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 15:15:13.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 15:15:13.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 15:15:13.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 15:15:13.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 15:15:13.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:15:13.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:15:13.313 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 15:15:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 15:15:13.314 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 15:15:13.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 15:15:13.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 15:15:13.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 15:15:13.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 15:15:13.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 15:15:13.316 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 15:15:13.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 15:15:13.317 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:15:13.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:15:13.318 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 15:15:13.328 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 15:15:13.329 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 15:15:13.350 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 15:15:14.043 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 15:15:14.106 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1356] millisecondes
+05-Mar-2024 15:15:14.264 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 15:15:14.265 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 15:15:14.302 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] de l'application web
+05-Mar-2024 15:15:18.702 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 15:15:19.508 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [684] millisecondes
+05-Mar-2024 15:15:19.575 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] s'est terminé en [5 273] ms
+05-Mar-2024 15:15:19.577 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 15:15:19.620 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [44] ms
+05-Mar-2024 15:15:19.621 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 15:15:20.075 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [454] ms
+05-Mar-2024 15:15:20.076 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 15:15:20.157 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [81] ms
+05-Mar-2024 15:15:20.158 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 15:15:20.202 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [44] ms
+05-Mar-2024 15:15:20.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 15:15:20.239 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [37] ms
+05-Mar-2024 15:15:20.251 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 15:15:21.030 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [6921] millisecondes
+05-Mar-2024 15:59:19.642 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 15:59:19.648 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 15:59:24.254 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 15:59:24.259 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 15:59:24.259 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 15:59:24.260 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 15:59:24.260 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 15:59:24.260 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 15:59:24.260 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 15:59:24.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 15:59:24.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 15:59:24.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:59:24.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:59:24.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 15:59:24.280 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 15:59:24.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 15:59:24.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 15:59:24.281 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 15:59:24.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 15:59:24.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 15:59:24.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 15:59:24.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 15:59:24.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 15:59:24.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:59:24.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 15:59:24.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 15:59:24.290 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 15:59:24.291 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 15:59:24.301 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 15:59:24.819 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 15:59:24.865 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1005] millisecondes
+05-Mar-2024 15:59:24.977 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 15:59:24.977 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 15:59:25.016 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] de l'application web
+05-Mar-2024 15:59:28.659 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 15:59:29.240 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [472] millisecondes
+05-Mar-2024 15:59:29.271 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] s'est terminé en [4 255] ms
+05-Mar-2024 15:59:29.272 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 15:59:29.310 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [38] ms
+05-Mar-2024 15:59:29.311 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 15:59:29.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [466] ms
+05-Mar-2024 15:59:29.777 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 15:59:29.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [60] ms
+05-Mar-2024 15:59:29.838 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 15:59:29.880 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [42] ms
+05-Mar-2024 15:59:29.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 15:59:29.915 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [34] ms
+05-Mar-2024 15:59:29.924 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 15:59:30.414 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [5547] millisecondes
+05-Mar-2024 16:05:35.651 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 16:05:35.657 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 16:06:23.234 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 16:06:23.239 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 16:06:23.240 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 16:06:23.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 16:06:23.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 16:06:23.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 16:06:23.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 16:06:23.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 16:06:23.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 16:06:23.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:06:23.242 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:06:23.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 16:06:23.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 16:06:23.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 16:06:23.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 16:06:23.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 16:06:23.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 16:06:23.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 16:06:23.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 16:06:23.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 16:06:23.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 16:06:23.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:06:23.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:06:23.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 16:06:23.282 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 16:06:23.282 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 16:06:23.299 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 16:06:23.736 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:06:23.785 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [924] millisecondes
+05-Mar-2024 16:06:23.905 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 16:06:23.905 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 16:06:23.949 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+05-Mar-2024 16:06:29.518 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:06:29.989 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [393] millisecondes
+05-Mar-2024 16:06:30.019 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [6 070] ms
+05-Mar-2024 16:06:30.020 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 16:06:30.053 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [33] ms
+05-Mar-2024 16:06:30.054 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 16:06:30.445 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [390] ms
+05-Mar-2024 16:06:30.446 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 16:06:30.491 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [46] ms
+05-Mar-2024 16:06:30.492 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 16:06:30.529 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [37] ms
+05-Mar-2024 16:06:30.530 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 16:06:30.557 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [27] ms
+05-Mar-2024 16:06:30.564 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:06:31.048 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [7262] millisecondes
+05-Mar-2024 16:10:16.911 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 16:10:16.917 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 16:10:20.436 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 16:10:20.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 16:10:20.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 16:10:20.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 16:10:20.442 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 16:10:20.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 16:10:20.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 16:10:20.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 16:10:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 16:10:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:10:20.444 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:10:20.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 16:10:20.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 16:10:20.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 16:10:20.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 16:10:20.462 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 16:10:20.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 16:10:20.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 16:10:20.463 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 16:10:20.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 16:10:20.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 16:10:20.464 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:10:20.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:10:20.465 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 16:10:20.471 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 16:10:20.471 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 16:10:20.478 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 16:10:20.967 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:10:21.004 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [927] millisecondes
+05-Mar-2024 16:10:21.077 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 16:10:21.078 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 16:10:21.104 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+05-Mar-2024 16:10:21.133 INFO [main] org.apache.catalina.startup.ExpandWar.expand Un répertoire décompressé [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet] a été trouvé avec une date de dernière modification qui ne correspond pas au WAR associé, il sera effacé
+05-Mar-2024 16:10:26.179 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:10:26.861 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [584] millisecondes
+05-Mar-2024 16:10:26.905 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [5 801] ms
+05-Mar-2024 16:10:26.907 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 16:10:26.948 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [41] ms
+05-Mar-2024 16:10:26.949 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 16:10:27.392 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [443] ms
+05-Mar-2024 16:10:27.393 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 16:10:27.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [58] ms
+05-Mar-2024 16:10:27.457 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 16:10:27.512 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [55] ms
+05-Mar-2024 16:10:27.514 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 16:10:27.588 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [74] ms
+05-Mar-2024 16:10:27.604 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:10:28.100 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [7096] millisecondes
+05-Mar-2024 16:17:48.109 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] de l'application web
+05-Mar-2024 16:17:54.748 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:17:54.764 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] s'est terminé en [6 655] ms
+05-Mar-2024 16:18:33.476 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 16:18:33.482 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 16:18:51.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 16:18:51.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 16:18:51.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 16:18:51.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 16:18:51.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 16:18:51.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 16:18:51.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 16:18:51.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 16:18:51.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 16:18:51.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:18:51.374 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:18:51.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 16:18:51.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 16:18:51.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 16:18:51.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 16:18:51.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 16:18:51.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 16:18:51.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 16:18:51.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 16:18:51.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 16:18:51.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 16:18:51.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:18:51.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:18:51.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 16:18:51.409 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 16:18:51.409 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 16:18:51.425 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 16:18:51.862 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:18:51.904 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [851] millisecondes
+05-Mar-2024 16:18:51.997 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 16:18:51.997 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 16:18:52.027 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+05-Mar-2024 16:18:55.235 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:18:55.745 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [428] millisecondes
+05-Mar-2024 16:18:55.775 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [3 748] ms
+05-Mar-2024 16:18:55.778 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] de l'application web
+05-Mar-2024 16:18:58.750 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:18:58.761 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] s'est terminé en [2 983] ms
+05-Mar-2024 16:18:58.762 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 16:18:58.795 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [33] ms
+05-Mar-2024 16:18:58.796 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 16:18:59.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [370] ms
+05-Mar-2024 16:18:59.167 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 16:18:59.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [53] ms
+05-Mar-2024 16:18:59.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 16:18:59.260 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [39] ms
+05-Mar-2024 16:18:59.261 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 16:18:59.292 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [32] ms
+05-Mar-2024 16:18:59.301 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:18:59.736 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [7831] millisecondes
+05-Mar-2024 16:48:45.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 16:48:45.679 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 16:48:45.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 16:48:45.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 16:48:45.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 16:48:45.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 16:48:45.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 16:48:45.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 16:48:45.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 16:48:45.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:48:45.684 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:48:45.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 16:48:45.716 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 16:48:45.717 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 16:48:45.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 16:48:45.718 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 16:48:45.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 16:48:45.719 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 16:48:45.720 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 16:48:45.720 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 16:48:45.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 16:48:45.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:48:45.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:48:45.721 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 16:48:45.730 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 16:48:45.731 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 16:48:45.749 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 16:48:46.322 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:48:46.356 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Echec d'initialisation du composant [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: L'initialisation du gestionnaire de protocole a échoué
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1055)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:246)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:201)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1192)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1205)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:583)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:79)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1052)
+		... 13 more
+05-Mar-2024 16:48:46.360 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1210] millisecondes
+05-Mar-2024 16:48:46.476 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 16:48:46.476 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 16:48:46.518 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+05-Mar-2024 16:48:50.675 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:48:51.252 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [491] millisecondes
+05-Mar-2024 16:48:51.294 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [4 777] ms
+05-Mar-2024 16:48:51.298 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] de l'application web
+05-Mar-2024 16:48:55.402 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:48:55.416 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] s'est terminé en [4 118] ms
+05-Mar-2024 16:48:55.417 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 16:48:55.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [35] ms
+05-Mar-2024 16:48:55.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 16:48:55.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [386] ms
+05-Mar-2024 16:48:55.840 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 16:48:55.895 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [55] ms
+05-Mar-2024 16:48:55.896 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 16:48:55.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [41] ms
+05-Mar-2024 16:48:55.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 16:48:55.965 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [27] ms
+05-Mar-2024 16:48:55.974 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [9613] millisecondes
+05-Mar-2024 16:50:35.697 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 16:50:35.702 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+		at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+		at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+		at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+		at java.base/java.net.Socket.connect(Socket.java:608)
+		at java.base/java.net.Socket.connect(Socket.java:557)
+		at java.base/java.net.Socket.<init>(Socket.java:453)
+		at java.base/java.net.Socket.<init>(Socket.java:230)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 16:50:42.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+05-Mar-2024 16:50:42.647 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+05-Mar-2024 16:50:42.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+05-Mar-2024 16:50:42.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+05-Mar-2024 16:50:42.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+05-Mar-2024 16:50:42.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+05-Mar-2024 16:50:42.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-11.0.15.1
+05-Mar-2024 16:50:42.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      11.0.15.1+2-LTS-10
+05-Mar-2024 16:50:42.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+05-Mar-2024 16:50:42.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:50:42.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:50:42.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+05-Mar-2024 16:50:42.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+05-Mar-2024 16:50:42.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+05-Mar-2024 16:50:42.684 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+05-Mar-2024 16:50:42.684 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+05-Mar-2024 16:50:42.686 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+05-Mar-2024 16:50:42.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+05-Mar-2024 16:50:42.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+05-Mar-2024 16:50:42.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+05-Mar-2024 16:50:42.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+05-Mar-2024 16:50:42.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:50:42.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+05-Mar-2024 16:50:42.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+05-Mar-2024 16:50:42.697 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+05-Mar-2024 16:50:42.698 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+05-Mar-2024 16:50:42.705 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+05-Mar-2024 16:50:43.332 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:50:43.384 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [1664] millisecondes
+05-Mar-2024 16:50:43.515 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+05-Mar-2024 16:50:43.515 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+05-Mar-2024 16:50:43.553 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+05-Mar-2024 16:50:47.260 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:50:47.896 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom La création de l'instance de SecureRandom pour le générateur d'id de session en utilisant [SHA1PRNG] a pris [525] millisecondes
+05-Mar-2024 16:50:47.967 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [4 413] ms
+05-Mar-2024 16:50:47.971 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] de l'application web
+05-Mar-2024 16:50:51.719 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+05-Mar-2024 16:50:51.732 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] s'est terminé en [3 761] ms
+05-Mar-2024 16:50:51.734 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+05-Mar-2024 16:50:51.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [40] ms
+05-Mar-2024 16:50:51.776 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+05-Mar-2024 16:50:52.165 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [388] ms
+05-Mar-2024 16:50:52.166 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+05-Mar-2024 16:50:52.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [58] ms
+05-Mar-2024 16:50:52.224 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+05-Mar-2024 16:50:52.270 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [47] ms
+05-Mar-2024 16:50:52.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+05-Mar-2024 16:50:52.304 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [32] ms
+05-Mar-2024 16:50:52.313 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 16:50:52.837 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [9451] millisecondes
+05-Mar-2024 17:02:46.300 INFO [main] org.apache.catalina.core.StandardServer.await Une commande d'arrêt valide a été reçue sur le port d'arrêt, arrêt de l'instance du serveur
+05-Mar-2024 17:02:46.323 INFO [main] org.apache.coyote.AbstractProtocol.pause Le gestionnaire de protocole ["http-nio-8080"] est mis en pause
+05-Mar-2024 17:02:47.027 INFO [main] org.apache.catalina.core.StandardService.stopInternal Arrêt du service [Catalina]
+05-Mar-2024 17:02:47.266 INFO [main] org.apache.coyote.AbstractProtocol.stop Arrêt du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 17:02:47.289 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destruction du gestionnaire de protocole ["http-nio-8080"]
+05-Mar-2024 17:03:13.460 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 17:03:13.467 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:579)
+		at java.base/sun.nio.ch.Net.connect(Net.java:568)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at java.base/java.net.Socket.connect(Socket.java:583)
+		at java.base/java.net.Socket.<init>(Socket.java:507)
+		at java.base/java.net.Socket.<init>(Socket.java:287)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 17:03:20.211 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 17:03:20.218 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:579)
+		at java.base/sun.nio.ch.Net.connect(Net.java:568)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at java.base/java.net.Socket.connect(Socket.java:583)
+		at java.base/java.net.Socket.<init>(Socket.java:507)
+		at java.base/java.net.Socket.<init>(Socket.java:287)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 17:03:35.711 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 17:03:35.717 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:579)
+		at java.base/sun.nio.ch.Net.connect(Net.java:568)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at java.base/java.net.Socket.connect(Socket.java:583)
+		at java.base/java.net.Socket.<init>(Socket.java:507)
+		at java.base/java.net.Socket.<init>(Socket.java:287)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 17:06:28.784 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 17:06:28.791 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:579)
+		at java.base/sun.nio.ch.Net.connect(Net.java:568)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at java.base/java.net.Socket.connect(Socket.java:583)
+		at java.base/java.net.Socket.<init>(Socket.java:507)
+		at java.base/java.net.Socket.<init>(Socket.java:287)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+05-Mar-2024 17:08:42.065 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+05-Mar-2024 17:08:42.073 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:579)
+		at java.base/sun.nio.ch.Net.connect(Net.java:568)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at java.base/java.net.Socket.connect(Socket.java:583)
+		at java.base/java.net.Socket.<init>(Socket.java:507)
+		at java.base/java.net.Socket.<init>(Socket.java:287)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)

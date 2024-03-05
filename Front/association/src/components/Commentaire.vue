@@ -9,12 +9,13 @@
   });
 
   onMounted(() => {
-    fetch('http://localhost:8080/Projet_Servlet/commentaires?operation=listeCommentaires')
+    fetch('http://localhost:8080/Servlet/commentaires?operation=listeCommentaires')
         .then((response) => response.json())
         .then((json) => {
           commentaires.value = json;
         });
   });
+  console.log(commentaires.value.message)
   //const app3 = Vue.createApp(Commentaires).mount('#app3')
 </script>
 

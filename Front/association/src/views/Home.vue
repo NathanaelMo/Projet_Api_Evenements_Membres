@@ -11,7 +11,7 @@
     </header>
 
     <nav>
-      <router-link to="/membres">Membres</router-link>
+      <button @click="goPageMembre">Membres</button>
       <router-link to="/evenements">Evenement</router-link>
       <router-link to="/lieux">Lieux</router-link>
       <router-link to="/commentaires">Commentaires</router-link>
@@ -24,6 +24,18 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    goPageMembre() {
+      this.$router.push('/membres');
+    },
+    navigateToComponentB() {
+      this.$router.push('/componentB');
+    }
+  }
+};
+</script>
 <style>
 @import './style.css';
 </style>

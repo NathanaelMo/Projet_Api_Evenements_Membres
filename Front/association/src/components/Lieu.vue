@@ -23,7 +23,6 @@
         });
   });
  //const app1 = Vue.createApp(Commentaires).mount('#app1')
-
 </script>
 
 <template>

@@ -18,12 +18,12 @@ public interface InscriptionService {
     /**
      * Get a inscription by an evenement id
      */
-    InscriptionDto getInscriptionByEvenementId(Long evenementId);
+    List<InscriptionDto> getInscriptionByIdEvenement(Long idEvenement);
 
     /**
      * Get a inscription by a membre id
      */
-    InscriptionDto getInscriptionByMembreId(Long membreId);
+    List<InscriptionDto> getInscriptionByIdMembre(Long membreId);
 
     /**
      * Delete a membre by the membre id and the evenment id

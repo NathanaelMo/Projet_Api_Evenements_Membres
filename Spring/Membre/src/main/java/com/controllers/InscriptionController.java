@@ -1,7 +1,9 @@
 package com.controllers;
 
+import ch.qos.logback.classic.Logger;
 import com.dtos.EvenementDto;
 import com.dtos.InscriptionDto;
+import com.dtos.MembreDto;
 import com.services.impl.EvenementServiceImpl;
 import com.services.impl.InscriptionServiceImpl;
 import org.springframework.web.bind.annotation.*;
@@ -30,17 +32,17 @@ public class InscriptionController {
 	/**
 	 * Method to get the Inscription based on the ID of an evenement
 	 */
-	@GetMapping("/evenements/{id_evenement}")
-	public InscriptionDto getInscriptionByEvenementId(@PathVariable Long idEvenement){
-		return inscriptionService.getInscriptionByEvenementId(idEvenement);
+	@GetMapping("/evenements/{id}")
+	public List<InscriptionDto> getInscriptionByIdEvenement(@PathVariable Long id){
+		return inscriptionService.getInscriptionByIdEvenement(id);
 	}
 
 	/**
 	 * Method to get the Inscription based on the ID of a membre
 	 */
-	@GetMapping("/membres/{id_membre}")
-	public InscriptionDto getInscriptionByMembreId(@PathVariable Long idMembre){
-		return inscriptionService.getInscriptionByMembreId(idMembre);
+	@GetMapping("/membres/{id}")
+	public List<InscriptionDto> getInscriptionByIdMembre(@PathVariable Long id){
+		return inscriptionService.getInscriptionByIdMembre(id);
 	}
 
 	/**
@@ -63,9 +65,9 @@ public class InscriptionController {
 	/**
 	 * Delete a Inscription by it's id
 	 */
-	@DeleteMapping("/membres/{idMembre}/evenements/{idEvenement}")
-	public Boolean deleteInscription(@PathVariable Long idMembre, @PathVariable Long idEvenement){
-		return inscriptionService.deleteInscription(idMembre, idEvenement);
+	@DeleteMapping("/membres/{id}/evenements/{id2}")
+	public Boolean deleteInscription(@PathVariable Long id, @PathVariable Long id2){
+		return inscriptionService.deleteInscription(id, id2);
 	}
 	
 }

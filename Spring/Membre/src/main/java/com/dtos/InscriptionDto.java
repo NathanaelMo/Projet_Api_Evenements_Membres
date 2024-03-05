@@ -8,6 +8,8 @@ import java.time.LocalDate;
 @Data
 public class InscriptionDto {
 
+	private Long idInscription;
+
 	private Long idMembre;
 
 	private Long idEvenement;

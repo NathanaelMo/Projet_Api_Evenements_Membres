@@ -1,17 +1,14 @@
 package com.services.impl;
 
 import com.dtos.InscriptionDto;
-import com.dtos.MembreDto;
 import com.entities.Inscription;
-import com.entities.Membre;
 import com.repositories.InscriptionRepository;
 import com.services.InscriptionService;
-import com.services.MembreService;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 @Service("inscriptionService")
 public class InscriptionServiceImpl implements InscriptionService {
@@ -44,21 +41,44 @@ public class InscriptionServiceImpl implements InscriptionService {
     }
 
     @Override
-    public InscriptionDto getInscriptionByEvenementId(Long evenementId) {
-        Inscription inscription = inscriptionRepository.findByEvenementId(evenementId);
-        return inscriptionEntityToDto(inscription);
+    public List<InscriptionDto> getInscriptionByIdEvenement(Long idEvenement) {
+        List<InscriptionDto> inscriptionDtos = new ArrayList<>();
+        List<Inscription> inscriptions = inscriptionRepository.findAll();
+        inscriptions.forEach(inscription -> {
+            if(inscription.getIdEvenement() == idEvenement){
+                inscriptionDtos.add(inscriptionEntityToDto(inscription));
+            }
+        });
+        return inscriptionDtos;
     }
 
     @Override
-    public InscriptionDto getInscriptionByMembreId(Long membreId) {
-        Inscription inscription = inscriptionRepository.findByMembreId(membreId);
-        return inscriptionEntityToDto(inscription);
+    public List<InscriptionDto> getInscriptionByIdMembre(Long idMembre) {
+        List<InscriptionDto> inscriptionDtos = new ArrayList<>();
+        List<Inscription> inscriptions = inscriptionRepository.findAll();
+        inscriptions.forEach(inscription -> {
+            if(inscription.getIdMembre() == idMembre){
+                inscriptionDtos.add(inscriptionEntityToDto(inscription));
+            }
+        });
+        return inscriptionDtos;
     }
 
     @Override
     public boolean deleteInscription(Long membreId, Long evenementId) {
-        inscriptionRepository.deleteByDoubleId(membreId, evenementId);
-        return true;
+        List<InscriptionDto> inscriptionDtos = new ArrayList<>();
+        AtomicBoolean delete = new AtomicBoolean(false);
+        List<Inscription> inscriptions = inscriptionRepository.findAll();
+        inscriptions.forEach(inscription -> {
+            if(inscription.getIdMembre() == membreId && inscription.getIdEvenement() == evenementId){
+                inscriptionRepository.deleteById(inscription.getIdInscription());
+                delete.set(true);
+            }
+        });
+        if(delete.get()){
+            return true;
+        }
+        return false;
     }
 
     @Override
@@ -76,6 +96,7 @@ public class InscriptionServiceImpl implements InscriptionService {
      */
     private InscriptionDto inscriptionEntityToDto(Inscription inscription){
         InscriptionDto inscriptionDto = new InscriptionDto();
+        inscriptionDto.setIdInscription(inscription.getIdInscription());
         inscriptionDto.setIdMembre(inscription.getIdMembre());
         inscriptionDto.setIdEvenement(inscription.getIdEvenement());
         return inscriptionDto;
@@ -86,6 +107,7 @@ public class InscriptionServiceImpl implements InscriptionService {
      */
     private Inscription inscriptionDtoToEntity(InscriptionDto inscriptionDto){
         Inscription inscription = new Inscription();
+        inscription.setIdInscription(inscriptionDto.getIdInscription());
         inscription.setIdMembre(inscriptionDto.getIdMembre());
         inscription.setIdEvenement(inscriptionDto.getIdEvenement());
         return inscription;

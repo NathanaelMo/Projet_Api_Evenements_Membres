@@ -45,7 +45,7 @@ public class MembreController {
 	/**
 	 * Method to get the membre based on the evenement ID
 	 */
-	@GetMapping("/evenements/{id_evenement}/membres")
+	@GetMapping("/evenements/{id}/membres")
 	public MembreDto getMembreByEvenement(@PathVariable Long id){
 		return membreService.getMembreByEvenement(id);
 	}

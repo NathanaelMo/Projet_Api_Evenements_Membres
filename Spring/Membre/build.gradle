@@ -2,9 +2,10 @@ plugins {
 	id 'org.springframework.boot' version '2.6.3'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'war' // Appliquez explicitement le plugin 'war'
 }
 
-group = 'com.example'
+group = 'com'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
@@ -36,6 +37,32 @@ dependencies {
 
 	implementation 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
 }
+
+// Déclaration de la classe principale
+//mainClassName = 'com.MembreApplication' // Remplacez par le nom complet de votre classe principale
+
+// Configuration spécifique pour Spring Boot
+//springBoot {
+//	mainClassName = 'com.MembreApplication' // Définit la classe principale pour l'exécution
+//}
+// Configuration spécifique pour Spring Boot
+
+war {
+	archiveName = 'MembreApplication.war' // Nom du fichier WAR généré
+	from sourceSets.main.output // Inclut les fichiers compilés dans le fichier WAR
+	dependsOn configurations.runtimeClasspath // Ajoute les dépendances dans le fichier WAR
+}
+
+
+// Définition de la classe principale pour l'exécution
+task setMainClassName {
+	doLast {
+		bootWar.mainClass = 'com.MembreApplication' // Remplacez par le nom complet de votre classe principale
+	}
+}
+
+bootWar.dependsOn setMainClassName
+
 
 test {
 	useJUnitPlatform()

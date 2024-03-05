@@ -1,6 +1,8 @@
 package com.controllers;
 
 import com.dtos.EvenementDto;
+import com.dtos.InscriptionDto;
+import com.dtos.MembreDto;
 import com.services.impl.EvenementServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,6 +34,31 @@ public class EvenementController {
 	public EvenementDto getEvenement(@PathVariable Long id){
 		return evenementService.getEvenementById(id);
 	}
+
+	/**
+	 * Method to get the evenement based on the membre ID
+	 */
+	@GetMapping("/membres/{id}/evenements")
+	public List<EvenementDto> getEvenementByMembre(@PathVariable Long id){
+		return evenementService.getEvenementByMembre(id);
+	}
+
+	/**
+	 * Method to get the inscription based on the evenement ID
+	 */
+	@GetMapping("/{id}/inscriptions")
+	public List<InscriptionDto> getInscriptionByEvenement(@PathVariable Long id){
+		return evenementService.getInscriptionByEvenement(id);
+	}
+
+	/**
+	 * Create a new inscription in the system
+	 */
+	@PostMapping("/{id}/membres/{id2}/inscriptions")
+	public InscriptionDto saveInscription(@PathVariable Long id, @PathVariable Long id2){
+		return evenementService.saveInscription(id, id2);
+	}
+
 
 	/**
 	 * Create a new Evenement in the system

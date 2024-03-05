@@ -1,5 +1,6 @@
 package com.services;
 
+import com.dtos.InscriptionDto;
 import com.dtos.MembreDto;
 
 import java.util.List;
@@ -20,10 +21,14 @@ public interface MembreService {
      */
     MembreDto getMembreById(Long membreId);
 
+
+
+    List<InscriptionDto> getInscriptionByMembre(Long membreId);
+
     /**
      * Get a membre by it's id
      */
-    MembreDto getMembreByEvenement(Long evenementId);
+    List<MembreDto> getMembreByEvenement(Long evenementId);
 
     /**
      * Delete a membre by it's id

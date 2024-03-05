@@ -1,9 +1,11 @@
 package com.services.impl;
 
 import com.dtos.MembreDto;
+import com.dtos.InscriptionDto;
 import com.entities.Membre;
 import com.repositories.MembreRepository;
 import com.services.MembreService;
+import com.services.InscriptionService;
 import javax.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +18,11 @@ public class MembreServiceImpl implements MembreService {
 
 	private final MembreRepository membreRepository;
 
-    public MembreServiceImpl(MembreRepository membreRepository){
+    private final InscriptionService inscriptionService;
+
+    public MembreServiceImpl(MembreRepository membreRepository, InscriptionService inscriptionService){
         this.membreRepository = membreRepository;
+        this.inscriptionService = inscriptionService;
     }
 
     @Override
@@ -47,8 +52,18 @@ public class MembreServiceImpl implements MembreService {
     }
 
     @Override
-    public MembreDto getMembreByEvenement(Long evenementId) {
-        return null;
+    public List<InscriptionDto> getInscriptionByMembre(Long membreId) {
+        return inscriptionService.getInscriptionByIdMembre(membreId);
+    }
+
+    @Override
+    public List<MembreDto> getMembreByEvenement(Long evenementId) {
+        List<InscriptionDto> inscriptions = inscriptionService.getInscriptionByIdEvenement(evenementId);
+        List<MembreDto> membreDtos = new ArrayList<>();
+        inscriptions.forEach(inscription -> {
+            membreDtos.add(this.getMembreById(inscription.getIdMembre()));
+        });
+        return membreDtos;
     }
 
     @Override

@@ -11,10 +11,10 @@
 <h2>Ajouter un membre</h2>
 
 <form action="../evenements?operation=ajouterEvenements" method="post">
-    <label for="nom">Nom de l'évenement :</label>
+    <label for="nom">Nom de l'événement :</label>
     <input type="text" id="nom" name="nom" required><br>
 
-    <label for="date">Date de l'évenement :</label>
+    <label for="date">Date de l'événement :</label>
     <input type="date" id="date" name="date" required><br>
 
     <label for="duree">Durée en jours :</label>

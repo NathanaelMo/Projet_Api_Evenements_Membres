@@ -4,27 +4,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Ajouter un membre</title>
+    <title>Inscription</title>
 </head>
 <body>
 
-<h2>Ajouter un membre</h2>
+<h2>Inscription à un événement</h2>
 
-<form action="../evenements?operation=ajouterEvenements" method="post">
-    <label for="nom">Nom de l'événement :</label>
-    <input type="text" id="nom" name="nom" required><br>
-
-    <label for="date">Date de l'événement :</label>
-    <input type="date" id="date" name="date" required><br>
-
-    <label for="duree">Durée en jours :</label>
-    <input type="number" id="duree" name="duree" min="1" required>1<br>
-
-    <label for="nb_participant">Nombre de participant maximum :</label>
-    <input type="number" id="nb_participant" name="nb_participant" min="1" required>1<br>
-
-
-    <!-- TODO rajouter une liste qui permet sélectionner le lieu de l'évenement -->
+<form action="../evenements?operation=inscriptionEvenement" method="post">
+    <!-- TODO rajouter une liste qui permet sélectionner un membre-->
+    <!-- TODO rajouter une liste qui permet sélectionner un événement -->
     <button type="submit">Ajouter</button>
 </form>
 

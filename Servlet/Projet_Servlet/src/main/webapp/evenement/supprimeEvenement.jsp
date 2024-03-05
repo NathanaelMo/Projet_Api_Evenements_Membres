@@ -4,13 +4,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Supprimer un membre</title>
+    <title>Supprimer un événement</title>
 </head>
 <body>
 
-    <h2>Supprimer un membre</h2>
+    <h2>Supprimer un événement</h2>
 
-    <form action="membres?operation=supprimerMembre" method="post">
+    <form action="evenement?operation=supprimerEvenement" method="post">
         <label for="id">Id:</label>
         <input type="text" id="id" name="id" required><br>
 

@@ -15,7 +15,7 @@ onMounted(() => {
         Evenements.value = json;
       });
 });
-const app2 = Vue.createApp(Evenements).mount('#app4')
+//const app2 = Vue.createApp(Evenements).mount('#app4')
 </script>
 
 <template>

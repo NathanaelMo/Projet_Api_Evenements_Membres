@@ -15,7 +15,7 @@
           commentaires.value = json;
         });
   });
-  const app3 = Vue.createApp(Commentaires).mount('#app3')
+  //const app3 = Vue.createApp(Commentaires).mount('#app3')
 </script>
 
 <template>

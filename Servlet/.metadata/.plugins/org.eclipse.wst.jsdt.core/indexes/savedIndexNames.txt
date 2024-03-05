@@ -1,8 +1,0 @@
-INDEX VERSION 1.4+C:\Users\33613\Desktop\M1_TIIL-A\S8\Systèmes d'information\Projet\Projet_Servlet_Eclipse\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2769097218.index
-3625557759.index
-2235372331.index
-2828961738.index
-2521560206.index
-794794618.index
-43295699.index

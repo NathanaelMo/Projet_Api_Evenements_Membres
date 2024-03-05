@@ -1,6 +1,7 @@
 package com.services;
 
 import com.dtos.EvenementDto;
+import com.dtos.InscriptionDto;
 
 import java.util.List;
 
@@ -21,6 +22,13 @@ public interface EvenementService {
      */
     EvenementDto getEvenementById(Long evenementId);
 
+
+    List<EvenementDto> getEvenementByMembre(Long membreId);
+
+
+    List<InscriptionDto> getInscriptionByEvenement(Long idEvenement);
+
+    InscriptionDto saveInscription(Long id, Long id2);
 
     /**
      * Delete a Evenement by it's id

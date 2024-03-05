@@ -1,11 +1,10 @@
 package com.services.impl;
-import com.dtos.MembreDto;
+import com.dtos.InscriptionDto;
 import com.entities.Evenement;
 import com.dtos.EvenementDto;
-import com.entities.Membre;
 import com.repositories.EvenementRepository;
-import com.repositories.MembreRepository;
 import com.services.EvenementService;
+import com.services.InscriptionService;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityNotFoundException;
@@ -16,8 +15,11 @@ public class EvenementServiceImpl implements EvenementService {
 
     private final EvenementRepository evenementRepository;
 
-    public EvenementServiceImpl(EvenementRepository evenementRepository){
+    private final InscriptionService inscriptionService;
+
+    public EvenementServiceImpl(EvenementRepository evenementRepository, InscriptionService inscriptionService){
         this.evenementRepository = evenementRepository;
+        this.inscriptionService = inscriptionService;
     }
 
     @Override
@@ -44,6 +46,30 @@ public class EvenementServiceImpl implements EvenementService {
     public EvenementDto getEvenementById(Long evenementId) {
         Evenement evenement = evenementRepository.findById(evenementId).orElseThrow(() -> new EntityNotFoundException("membre not found"));
         return evenementEntityToDto(evenement);
+    }
+
+    @Override
+    public List<EvenementDto> getEvenementByMembre(Long membreId) {
+        List<InscriptionDto> inscriptions = inscriptionService.getInscriptionByIdMembre(membreId);
+        List<EvenementDto> evenementDtos = new ArrayList<>();
+        inscriptions.forEach(inscription -> {
+            evenementDtos.add(this.getEvenementById(inscription.getIdEvenement()));
+        });
+        return evenementDtos;
+    }
+
+    @Override
+    public List<InscriptionDto> getInscriptionByEvenement(Long idEvenement) {
+        return inscriptionService.getInscriptionByIdEvenement(idEvenement);
+    }
+
+    @Override
+    public InscriptionDto saveInscription(Long id, Long id2) {
+        InscriptionDto inscription = new InscriptionDto();
+        inscription.setIdEvenement(id);
+        inscription.setIdMembre(id2);
+        inscriptionService.saveInscription(inscription);
+        return inscription;
     }
 
     @Override

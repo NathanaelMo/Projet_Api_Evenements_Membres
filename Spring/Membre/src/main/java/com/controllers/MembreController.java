@@ -1,5 +1,6 @@
 package com.controllers;
 
+import com.dtos.InscriptionDto;
 import com.dtos.MembreDto;
 import org.springframework.web.bind.annotation.*;
 
@@ -45,11 +46,19 @@ public class MembreController {
 	/**
 	 * Method to get the membre based on the evenement ID
 	 */
-	@GetMapping("/evenements/{id_evenement}/membres")
-	public MembreDto getMembreByEvenement(@PathVariable Long id){
+	@GetMapping("/evenements/{id}/membres")
+	public List<MembreDto> getMembreByEvenement(@PathVariable Long id){
 		return membreService.getMembreByEvenement(id);
 	}
 
+
+	/**
+	 * Method to get the inscription based on the membre ID
+	 */
+	@GetMapping("/{id}/inscriptions")
+	public List<InscriptionDto> getInscriptionByMembre(@PathVariable Long id){
+		return membreService.getInscriptionByMembre(id);
+	}
 
 	/**
 	 * Modify a new Membre in the system

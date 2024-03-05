@@ -1,22 +1,22 @@
 <script setup>
+import { ref, onMounted, computed } from 'vue';
 
-  const {ref, onMounted, computed} = require('vue');
+const auteur = ref('Charlotte');
+const leMembre = ref(null);
+const Membres = ref([]);
 
-  const auteur = ref('Charlotte');
-  const Membres = ref([]);
+const nbMembres = computed(() => {
+  return Membres.value.length;
+});
 
-  const nbMembres = computed(() => {
-    return Membres.value.length;
-  });
+onMounted(() => {
+  fetch('http://localhost:8080/Projet_Servlet/Membres?operation=listeMembres')
+      .then((response) => response.json())
+      .then((json) => {
+        Membres.value = json;
+      });
+});
 
-    onMounted(() => {
-    fetch('http://localhost:8080/Projet_Servlet/Membres?operation=listeMembres')
-        .then((response) => response.json())
-        .then((json) => {
-          Membres.value = json;
-        });
-  });
-  //const app2 = Vue.createApp(Membres).mount('#app5')
 </script>
 
 

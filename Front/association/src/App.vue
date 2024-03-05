@@ -4,6 +4,7 @@ import Home from "@/views/Home.vue";
 
 <template>
   <Home></Home>
+  <div id="app"></div>
 </template>
 
 <style scoped>

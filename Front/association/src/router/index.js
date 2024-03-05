@@ -5,6 +5,7 @@ import Membres from '../components/Membre.vue';
 import Evenements from '../components/Evenement.vue';
 import Lieux from '../components/Lieu.vue';
 import Commentaires from '../components/Commentaire.vue';
+import Accueil from "@/components/Accueil.vue";
 
 
 const router = createRouter({
@@ -13,7 +14,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Accueil
     },
     {
       path: '/commentaires',

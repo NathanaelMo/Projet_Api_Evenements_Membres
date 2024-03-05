@@ -11,31 +11,54 @@
     </header>
 
     <nav>
-      <button @click="goPageMembre">Membres</button>
-      <router-link to="/evenements">Evenement</router-link>
-      <router-link to="/lieux">Lieux</router-link>
-      <router-link to="/commentaires">Commentaires</router-link>
+      <router-link to="/" @click="goPageHome">Accueil</router-link>
+      <router-link to="/membres" @click="goPageMembre">Membres</router-link>
+      <router-link to="/evenements"@click="goPageEvenement">Evenement</router-link>
+      <router-link to="/lieux" @click="goPageLieu">Lieux</router-link>
+      <router-link to="/commentaires" @click="goPageCommentaire">Commentaires</router-link>
     </nav>
 
-    <section id="content">
-      <router-view></router-view>
-    </section>
+    <keep-alive>
+      <component :is="dynamicComponent"></component>
+    </keep-alive>
     </body>
   </div>
 </template>
 
 <script>
+import Membre from "../components/Membre.vue";
+import Commentaire from "../components/Commentaire.vue";
+import Evenement from "../components/Evenement.vue";
+import Lieu from "../components/Lieu.vue";
+import Accueil from "../components/Accueil.vue";
+
 export default {
+  data() {
+    return {
+      dynamicComponent: Accueil
+    };
+  },
   methods: {
     goPageMembre() {
-      this.$router.push('/membres');
+      this.dynamicComponent = Membre;
     },
-    navigateToComponentB() {
-      this.$router.push('/componentB');
+    goPageLieu() {
+      this.dynamicComponent = Lieu;
+    },
+    goPageEvenement() {
+      this.dynamicComponent = Evenement;
+    },
+    goPageCommentaire() {
+      this.dynamicComponent = Commentaire;
+    },
+    goPageHome() {
+      console.log('goPageHome method called');
+      this.dynamicComponent = Accueil;
     }
   }
 };
 </script>
+
 <style>
 @import './style.css';
 </style>

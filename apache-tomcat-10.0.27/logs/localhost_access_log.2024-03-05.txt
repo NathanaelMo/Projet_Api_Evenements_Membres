@@ -64,3 +64,16 @@
 0:0:0:0:0:0:0:1 - - [05/Mar/2024:16:51:05 +0100] "GET /Projet_Servlet/commentaires?operation=listeCommentaires HTTP/1.1" 500 3940
 0:0:0:0:0:0:0:1 - - [05/Mar/2024:16:51:21 +0100] "GET /Spring/ HTTP/1.1" 404 693
 0:0:0:0:0:0:0:1 - - [05/Mar/2024:16:51:34 +0100] "GET /membres HTTP/1.1" 404 689
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:03 +0100] "GET /Projet_Servlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:04 +0100] "GET /Projet_Servlet/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:06 +0100] "GET /Projet_Servlet/commentaires?operation=listeCommentaires HTTP/1.1" 200 532
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:11 +0100] "GET /Projet_Servlet/lieux?operation=listeLieux HTTP/1.1" 200 724
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET / HTTP/1.1" 200 11437
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /tomcat.css HTTP/1.1" 200 5895
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /tomcat.svg HTTP/1.1" 200 68761
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /asf-logo-wide.svg HTTP/1.1" 200 27530
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /bg-nav.png HTTP/1.1" 200 1401
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /bg-middle.png HTTP/1.1" 200 1918
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /bg-button.png HTTP/1.1" 200 713
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:29:23 +0100] "GET /bg-upper.png HTTP/1.1" 200 3103
+0:0:0:0:0:0:0:1 - - [05/Mar/2024:17:30:06 +0100] "GET /Spring/membres HTTP/1.1" 404 700

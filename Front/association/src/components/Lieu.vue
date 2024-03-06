@@ -1,28 +1,19 @@
 <script setup>
- const {ref, onMounted} = require('vue');
+import { ref, onMounted} from 'vue'
 
   const leLieu = ref({});
   const selectionne = ref(false);
   const lieux = ref([]);
 
-  const selectLocation = (lieu) => {
-    leLieu.value = lieu;
-    selectionne.value = true;
-  };
-
-    onMounted(() => {
+  onMounted(() => {
     fetch('http://localhost:8080/Projet_Servlet/lieux?operation=listeLieux')
         .then((response) => response.json())
         .then((json) => {
           lieux.value = json;
-
-          // Call selectLocation method with the first location in the list
-          if (json.length > 0) {
-            selectLocation(json[0]);
-          }
         });
   });
- //const app1 = Vue.createApp(Commentaires).mount('#app1')
+console.log("Lieux récupérés")
+//const app3 = Vue.createApp(Commentaires).mount('#app3')
 </script>
 
 <template>
@@ -33,6 +24,7 @@
       <select v-model="leLieu" style="width:250px">
         <option v-for="lieu in lieux" :value="lieu">
           {{ lieu.nom }}
+
         </option>
       </select>
       <div v-show="selectionne">
@@ -52,7 +44,7 @@
       <br />
       <br />
       <h2>Ajouter un nouveau lieu :</h2>
-      <form action="lieux?operation=ajouterLieu" method="post">
+      <form action="http://localhost:8080/Projet_Servlet/lieux?operation=ajouterLieu" method="post">
         <label for="nom">Nom du lieu:</label>
         <input type="text" id="nom" name="nom" required><br>
         <br />
@@ -68,7 +60,7 @@
       <br />
       <h2>Supprimer un lieu</h2>
 
-      <form action="lieux?operation=supprimerLieu" method="post">
+      <form action="http://localhost:8080/Projet_Servlet/lieux?operation=supprimerLieu" method="post">
         <select v-model="leLieu" style="width:250px">
           <option v-for="lieu in lieux" :value="lieu">
             {{ lieu.nom }}

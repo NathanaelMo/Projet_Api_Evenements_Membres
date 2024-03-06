@@ -41,6 +41,7 @@ select {
     border-radius: 5px;
     appearance: none; /* Supprime le style par défaut du navigateur */
     background-color: white; /* Couleur de fond */
+    color: #181818;
 }
 
 /* Styles pour les options du select */
@@ -61,7 +62,8 @@ select option {
 /* Styles généraux pour le corps de la page */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    color: #181818;
+    background-color: #efeeee;
 }
 
 

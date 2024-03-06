@@ -40,15 +40,19 @@ export default {
   },
   methods: {
     goPageMembre() {
+      console.log('goPageHome method called');
       this.dynamicComponent = Membre;
     },
     goPageLieu() {
+      console.log('goPageHome method called');
       this.dynamicComponent = Lieu;
     },
     goPageEvenement() {
+      console.log('goPageHome method called');
       this.dynamicComponent = Evenement;
     },
     goPageCommentaire() {
+      console.log('goPageHome method called');
       this.dynamicComponent = Commentaire;
     },
     goPageHome() {

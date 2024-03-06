@@ -1,0 +1,282 @@
+06-Mar-2024 08:04:29.175 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+06-Mar-2024 08:04:29.182 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+06-Mar-2024 08:04:29.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+06-Mar-2024 08:04:29.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+06-Mar-2024 08:04:29.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+06-Mar-2024 08:04:29.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+06-Mar-2024 08:04:29.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-17
+06-Mar-2024 08:04:29.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.10+11-LTS-240
+06-Mar-2024 08:04:29.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+06-Mar-2024 08:04:29.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:04:29.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:04:29.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2024 08:04:29.209 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2024 08:04:29.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2024 08:04:29.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2024 08:04:29.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2024 08:04:29.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+06-Mar-2024 08:04:29.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2024 08:04:29.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2024 08:04:29.211 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2024 08:04:29.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+06-Mar-2024 08:04:29.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:04:29.212 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:04:29.213 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+06-Mar-2024 08:04:29.271 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+06-Mar-2024 08:04:29.271 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+06-Mar-2024 08:04:29.287 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+06-Mar-2024 08:04:29.665 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+06-Mar-2024 08:04:29.709 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [862] millisecondes
+06-Mar-2024 08:04:29.782 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+06-Mar-2024 08:04:29.783 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+06-Mar-2024 08:04:29.821 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+06-Mar-2024 08:04:34.509 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+06-Mar-2024 08:04:34.684 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [4 858] ms
+06-Mar-2024 08:04:34.696 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] de l'application web
+06-Mar-2024 08:04:40.275 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+06-Mar-2024 08:04:40.287 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] s'est terminé en [5 591] ms
+06-Mar-2024 08:04:40.289 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+06-Mar-2024 08:04:40.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [36] ms
+06-Mar-2024 08:04:40.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+06-Mar-2024 08:04:41.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [794] ms
+06-Mar-2024 08:04:41.121 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+06-Mar-2024 08:04:41.177 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [55] ms
+06-Mar-2024 08:04:41.177 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+06-Mar-2024 08:04:41.226 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [49] ms
+06-Mar-2024 08:04:41.227 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+06-Mar-2024 08:04:41.256 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [28] ms
+06-Mar-2024 08:04:41.261 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+06-Mar-2024 08:04:41.330 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [11620] millisecondes
+06-Mar-2024 08:04:52.063 INFO [http-nio-8080-exec-4] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:04:52.289 INFO [http-nio-8080-exec-4] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 5.4.21.Final
+06-Mar-2024 08:04:52.806 INFO [http-nio-8080-exec-4] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-Mar-2024 08:04:53.216 WARN [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:04:53.221 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:04:53.222 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:04:53.222 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:04:53.230 INFO [http-nio-8080-exec-4] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:04:53.626 INFO [http-nio-8080-exec-4] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:04:55.342 INFO [http-nio-8080-exec-4] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:25:54.929 INFO [http-nio-8080-exec-7] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:25:55.003 WARN [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:25:55.004 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:25:55.005 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:25:55.005 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:25:55.006 INFO [http-nio-8080-exec-7] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:25:55.257 INFO [http-nio-8080-exec-7] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:25:55.757 INFO [http-nio-8080-exec-7] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:26:09.180 INFO [http-nio-8080-exec-9] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:26:09.202 WARN [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:26:09.202 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:26:09.202 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:26:09.202 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:26:09.202 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:26:09.391 INFO [http-nio-8080-exec-9] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:26:09.559 INFO [http-nio-8080-exec-9] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:46:25.692 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Projet_Servlet]
+06-Mar-2024 08:46:25.739 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc L'application web [Projet_Servlet] a enregistré un pilote JDBC [org.mariadb.jdbc.Driver], mais ne l'a pas désenregistré avant l'arrêt de l'application.  Pour éviter une fuite de mémoire, le pilote JDBC a été désenregistré de force.
+06-Mar-2024 08:46:25.739 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [BufferPoolPruner-1-thread-1] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.754 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [cluster-ClusterId{value='65e81594f688d41eb29baa75', description='null'}-obiwan.univ-brest.fr:27017] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/sun.nio.ch.Net.poll(Native Method)
+ java.base@17.0.10/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:186)
+ java.base@17.0.10/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:290)
+ java.base@17.0.10/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+ java.base@17.0.10/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+ java.base@17.0.10/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+ java.base@17.0.10/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ com.mongodb.internal.connection.SocketStream.read(SocketStream.java:113)
+ com.mongodb.internal.connection.SocketStream.read(SocketStream.java:138)
+ com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+ com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:574)
+ com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:413)
+ com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:372)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:226)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:158)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.754 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [cluster-rtt-ClusterId{value='65e81594f688d41eb29baa75', description='null'}-obiwan.univ-brest.fr:27017] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/java.lang.Thread.sleep(Native Method)
+ com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:448)
+ com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:65)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:420)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.754 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [MaintenanceTimer-2-thread-1] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.754 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [Hibernate Connection Pool Validation Thread] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.754 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [Hibernate Connection Pool Validation Thread] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.754 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads L'application web [Projet_Servlet] semble avoir démarré un thread nommé [Hibernate Connection Pool Validation Thread] mais ne l'a pas arrêté, ce qui va probablement créer une fuite de mémoire ; la trace du thread est : 
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:842)
+06-Mar-2024 08:46:25.879 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] de l'application web
+06-Mar-2024 08:46:30.585 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+06-Mar-2024 08:46:30.648 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Servlet.war] s'est terminé en [4 769] ms
+06-Mar-2024 08:46:41.169 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Retrait de l'application web ayant pour chemin de contexte [/Servlet]
+06-Mar-2024 08:46:41.169 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+06-Mar-2024 08:46:44.804 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+06-Mar-2024 08:46:44.833 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [3 664] ms
+06-Mar-2024 08:46:48.267 INFO [http-nio-8080-exec-8] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:46:48.418 INFO [http-nio-8080-exec-8] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 5.4.21.Final
+06-Mar-2024 08:46:48.811 INFO [http-nio-8080-exec-8] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-Mar-2024 08:46:49.196 WARN [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:46:49.196 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:46:49.196 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:46:49.196 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:46:49.196 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:46:49.555 INFO [http-nio-8080-exec-8] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:46:51.149 INFO [http-nio-8080-exec-8] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:48:28.940 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Impossible de se connecter à [localhost : 8005] (port de base [8005] et offset [0]), Tomcat peut ne pas être en cours d'exécution
+06-Mar-2024 08:48:28.948 SEVERE [main] org.apache.catalina.startup.Catalina.stopServer Erreur lors de l'arrêt de Catalina
+	java.net.ConnectException: Connection refused: connect
+		at java.base/sun.nio.ch.Net.connect0(Native Method)
+		at java.base/sun.nio.ch.Net.connect(Net.java:579)
+		at java.base/sun.nio.ch.Net.connect(Net.java:568)
+		at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+		at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+		at java.base/java.net.Socket.connect(Socket.java:633)
+		at java.base/java.net.Socket.connect(Socket.java:583)
+		at java.base/java.net.Socket.<init>(Socket.java:507)
+		at java.base/java.net.Socket.<init>(Socket.java:287)
+		at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:692)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:391)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:481)
+06-Mar-2024 08:48:32.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom version serveur :              Apache Tomcat/10.0.27
+06-Mar-2024 08:48:32.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Serveur compilé :                  Oct 3 2022 14:18:31 UTC
+06-Mar-2024 08:48:32.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version du serveur :               10.0.27.0
+06-Mar-2024 08:48:32.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nom de l'OS :                      Windows 11
+06-Mar-2024 08:48:32.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version OS :                       10.0
+06-Mar-2024 08:48:32.654 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture :                     amd64
+06-Mar-2024 08:48:32.655 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home :                        C:\Program Files\Java\jdk-17
+06-Mar-2024 08:48:32.656 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Version JVM :                      17.0.10+11-LTS-240
+06-Mar-2024 08:48:32.657 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Fournisseur de la JVM :            Oracle Corporation
+06-Mar-2024 08:48:32.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:48:32.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME :                    D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:48:32.678 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.lang=ALL-UNNAMED
+06-Mar-2024 08:48:32.679 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.io=ALL-UNNAMED
+06-Mar-2024 08:48:32.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util=ALL-UNNAMED
+06-Mar-2024 08:48:32.680 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+06-Mar-2024 08:48:32.681 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+06-Mar-2024 08:48:32.682 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.config.file=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\conf\logging.properties
+06-Mar-2024 08:48:32.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Mar-2024 08:48:32.683 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djdk.tls.ephemeralDHKeySize=2048
+06-Mar-2024 08:48:32.684 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+06-Mar-2024 08:48:32.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dignore.endorsed.dirs=
+06-Mar-2024 08:48:32.685 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.base=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:48:32.686 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Dcatalina.home=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27
+06-Mar-2024 08:48:32.686 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Argument de la ligne de commande : -Djava.io.tmpdir=D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\temp
+06-Mar-2024 08:48:32.694 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Chargement de la librairie Apache Tomcat Native [1.2.35] en utilisant APR version [1.7.0]
+06-Mar-2024 08:48:32.694 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Fonctionnalités d'APR : IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true]
+06-Mar-2024 08:48:32.704 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL a été initialisé avec succès [OpenSSL 1.1.1q  5 Jul 2022]
+06-Mar-2024 08:48:33.180 INFO [main] org.apache.coyote.AbstractProtocol.init Initialisation du gestionnaire de protocole ["http-nio-8080"]
+06-Mar-2024 08:48:33.214 INFO [main] org.apache.catalina.startup.Catalina.load L'initialisation du serveur a pris [937] millisecondes
+06-Mar-2024 08:48:33.283 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service [Catalina]
+06-Mar-2024 08:48:33.283 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Démarrage du moteur de Servlets : [Apache Tomcat/10.0.27]
+06-Mar-2024 08:48:33.308 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] de l'application web
+06-Mar-2024 08:48:36.357 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+06-Mar-2024 08:48:36.528 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Projet_Servlet.war] s'est terminé en [3 215] ms
+06-Mar-2024 08:48:36.532 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Déploiement de l'archive [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] de l'application web
+06-Mar-2024 08:48:39.939 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Au moins un fichier JAR a été analysé pour trouver des TLDs mais il n'en contenait pas, le mode "debug" du journal peut être activé pour obtenir une liste complète de JAR scannés sans succès ; éviter d'analyser des JARs inutilement peut améliorer sensiblement le temps de démarrage et le temps de compilation des JSPs
+06-Mar-2024 08:48:39.949 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Le déploiement de l'archive de l'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\Spring.war] s'est terminé en [3 417] ms
+06-Mar-2024 08:48:39.951 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs]
+06-Mar-2024 08:48:39.984 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\docs] de l'application web s'est terminé en [33] ms
+06-Mar-2024 08:48:39.985 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples]
+06-Mar-2024 08:48:40.461 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\examples] de l'application web s'est terminé en [476] ms
+06-Mar-2024 08:48:40.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager]
+06-Mar-2024 08:48:40.517 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\host-manager] de l'application web s'est terminé en [55] ms
+06-Mar-2024 08:48:40.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager]
+06-Mar-2024 08:48:40.570 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\manager] de l'application web s'est terminé en [53] ms
+06-Mar-2024 08:48:40.571 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire d'application web [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT]
+06-Mar-2024 08:48:40.603 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Le déploiement du répertoire [D:\ACours\Brest\Master TILL-A\semestre 8\SI\Projet_Api_Evenements_Membres\Projet_Api_Evenements_Membres\apache-tomcat-10.0.27\webapps\ROOT] de l'application web s'est terminé en [31] ms
+06-Mar-2024 08:48:40.607 INFO [main] org.apache.coyote.AbstractProtocol.start Démarrage du gestionnaire de protocole ["http-nio-8080"]
+06-Mar-2024 08:48:40.699 INFO [main] org.apache.catalina.startup.Catalina.start Le démarrage du serveur a pris [7483] millisecondes
+06-Mar-2024 08:49:09.503 INFO [http-nio-8080-exec-2] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:49:09.713 INFO [http-nio-8080-exec-2] org.hibernate.Version.logVersion HHH000412: Hibernate ORM core version 5.4.21.Final
+06-Mar-2024 08:49:10.198 INFO [http-nio-8080-exec-2] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+06-Mar-2024 08:49:10.573 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:49:10.573 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:49:10.573 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:49:10.573 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:49:10.588 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:49:10.979 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:49:12.742 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:55:55.664 INFO [http-nio-8080-exec-8] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:55:55.713 WARN [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:55:55.714 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:55:55.715 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:55:55.716 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:55:55.716 INFO [http-nio-8080-exec-8] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:55:55.757 INFO [http-nio-8080-exec-8] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:55:55.933 INFO [http-nio-8080-exec-8] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:56:10.135 INFO [http-nio-8080-exec-9] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:56:10.163 WARN [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:56:10.163 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:56:10.164 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:56:10.164 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:56:10.164 INFO [http-nio-8080-exec-9] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:56:10.205 INFO [http-nio-8080-exec-9] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:56:10.322 INFO [http-nio-8080-exec-9] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 08:56:17.073 INFO [http-nio-8080-exec-2] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [name: AssociationPU]
+06-Mar-2024 08:56:17.100 WARN [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+06-Mar-2024 08:56:17.100 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001005: using driver [org.mariadb.jdbc.Driver] at URL [jdbc:mariadb://obiwan.univ-brest.fr:3306/e21905149_db1]
+06-Mar-2024 08:56:17.100 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001001: Connection properties: {password=****, user=e21905149sql}
+06-Mar-2024 08:56:17.100 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildCreator HHH10001003: Autocommit mode: false
+06-Mar-2024 08:56:17.100 INFO [http-nio-8080-exec-2] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init> HHH000115: Hibernate connection pool size: 20 (min=1)
+06-Mar-2024 08:56:17.124 INFO [http-nio-8080-exec-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+06-Mar-2024 08:56:17.216 INFO [http-nio-8080-exec-2] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-Mar-2024 09:21:54.089 INFO [http-nio-8080-exec-8] org.apache.coyote.http11.Http11Processor.service Erreur lors de l'analyse d'un en-tête de requête HTTP
+ Note : les occurrences suivantes d'erreurs d'analyse de requête HTTP seront enregistrées au niveau DEBUG.
+	java.lang.IllegalArgumentException: Un caractère invalide a été trouvé dans la cible de la requête, les caractères valides sont définis dans RFC 7230 et RFC 3986
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:494)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1762)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:842)

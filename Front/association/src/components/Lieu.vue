@@ -1,9 +1,16 @@
 <script setup>
-import { ref, onMounted} from 'vue'
+import {ref, onMounted, watch, reactive} from 'vue'
 
-  const leLieu = ref({});
+  const leLieu = ref(null);
   const selectionne = ref(false);
   const lieux = ref([]);
+  const idLieuInput = ref(null);
+  const lieuParId= ref([]);
+
+const state = reactive({
+  leLieuId: null,
+  leLieu: {},
+});
 
   onMounted(() => {
     fetch('http://localhost:8080/Projet_Servlet/lieux?operation=listeLieux')
@@ -12,6 +19,18 @@ import { ref, onMounted} from 'vue'
           lieux.value = json;
         });
   });
+
+  watch(leLieu, (nouvelleValeur, ancienneValeur) => {
+    selectionne.value = true;
+  });
+
+  const getLieuParId = () => {
+    const id_lieu = idLieuInput.value;
+      fetch(`http://localhost:8080/Projet_Servlet/lieux?operation=getLieuParId&id_lieu=${id_lieu}`)
+          .then((response) => response.json())
+          .then((json) => {lieuParId.value = json});
+  }
+
 console.log("Lieux récupérés")
 //const app3 = Vue.createApp(Commentaires).mount('#app3')
 </script>
@@ -21,7 +40,7 @@ console.log("Lieux récupérés")
     <main id="app1">
       <h1>Gestion des lieux en Vue</h1>
       <p>Sélectionnez un lieu dans la liste :</p>
-      <select v-model="leLieu" style="width:250px">
+      <select ref="leLieu" v-model="state.leLieu" style="width:250px">
         <option v-for="lieu in lieux" :value="lieu">
           {{ lieu.nom }}
 
@@ -32,12 +51,12 @@ console.log("Lieux récupérés")
         <table>
           <tr>
             <td>Nom</td>
-            <td><input v-model="leLieu.nom"/></td>
+            <td><input v-model="state.leLieu.nom"/></td>
           </tr>
           <tr>
             <td>Adresse</td>
-            <td><input v-model="leLieu.adresse"/></td></tr>
-          <tr><td>Capacité maximale</td><td><input v-model="leLieu.nbMaxPers"/></td></tr>
+            <td><input v-model="state.leLieu.adresse"/></td></tr>
+          <tr><td>Capacité maximale</td><td><input v-model="state.leLieu.nbMaxPers"/></td></tr>
 
         </table>
       </div>
@@ -61,13 +80,23 @@ console.log("Lieux récupérés")
       <h2>Supprimer un lieu</h2>
 
       <form action="http://localhost:8080/Projet_Servlet/lieux?operation=supprimerLieu" method="post">
-        <select v-model="leLieu" style="width:250px">
-          <option v-for="lieu in lieux" :value="lieu">
-            {{ lieu.nom }}
-          </option>
-        </select>
+        <label for="id">Id:</label>
+        <input type="text" id="id" name="id" required><br>
+        <br />
         <button type="submit">Supprimer</button>
       </form>
+
+      <br />
+      <h2>Afficher le lieu d'id:</h2>
+      <form>
+        <label for="id_lieu">Id:</label>
+        <input ref="idLieuInput" type="text" id="id_lieu" name="id_lieu" v-model="id_lieu" required><br>
+        <br />
+        <button @click.prevent="getLieuParId">Chercher</button><br />
+      </form>
+      <div v-for="lieu in lieuParId" :key="lieu.id_lieu">
+        <p>lieu : {{ lieu.nom }}</p>
+      </div>
     </main>
   </div>
 </template>

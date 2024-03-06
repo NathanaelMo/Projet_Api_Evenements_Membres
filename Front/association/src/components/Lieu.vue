@@ -25,7 +25,8 @@ const state = reactive({
   });
 
   const getLieuParId = () => {
-    const id_lieu = idLieuInput.value;
+    const id_lieu = idLieuInput.value.value;
+    console.log(id_lieu);
       fetch(`http://localhost:8080/Projet_Servlet/lieux?operation=getLieuParId&id_lieu=${id_lieu}`)
           .then((response) => response.json())
           .then((json) => {lieuParId.value = json});
@@ -39,24 +40,25 @@ console.log("Lieux récupérés")
   <div id="pageLieu">
     <main id="app1">
       <h1>Gestion des lieux en Vue</h1>
-      <p>Sélectionnez un lieu dans la liste :</p>
+      <p>Sélectionnez un lieu dans la liste pour voir ses propriétés:</p>
       <select ref="leLieu" v-model="state.leLieu" style="width:250px">
         <option v-for="lieu in lieux" :value="lieu">
           {{ lieu.nom }}
-
         </option>
       </select>
       <div v-show="selectionne">
-        <p><br/>Editez ses propriétés :</p>
+        <p><br/>Propriétés du lieu :</p>
+        <br />
         <table>
           <tr>
-            <td>Nom</td>
-            <td><input v-model="state.leLieu.nom"/></td>
+            <td>Nom: </td>
+            <td>{{ state.leLieu.nom }}</td>
           </tr>
           <tr>
-            <td>Adresse</td>
-            <td><input v-model="state.leLieu.adresse"/></td></tr>
-          <tr><td>Capacité maximale</td><td><input v-model="state.leLieu.nbMaxPers"/></td></tr>
+            <td>Adresse: </td>
+            <td>{{ state.leLieu.adresse }}</td></tr>
+          <tr><td>Capacité maximale: </td>
+            <td>{{ state.leLieu.nbMaxPers }}</td></tr>
 
         </table>
       </div>

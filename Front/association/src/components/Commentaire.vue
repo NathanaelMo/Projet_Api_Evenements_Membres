@@ -1,11 +1,14 @@
 <script setup>
-  import { ref, onMounted, computed } from 'vue';
+import {ref, onMounted, computed, reactive} from 'vue';
 
   const auteur = ref('Charlotte');
   const commentaires = ref([]);
   const commentairesParEvenement = ref([]);
   const idEvenementInput = ref(null);
-
+  const state = reactive({
+    leCommentaireId: null,
+    leCommentaire: {},
+  });
   const nbCommentaires = computed(() => {
     return commentaires.value.length;
   });
@@ -19,12 +22,14 @@
   });
 
   const getCommentairesParEvenement = () => {
-    const idEvenement = idEvenementInput.value;
+    const idEvenement = idEvenementInput.value.value;
+    console.log(idEvenement)
     fetch(`http://localhost:8080/Projet_Servlet/commentaires?operation=CommentairesParEvenement&id_evenement=${idEvenement}`)
         .then((response) => response.json())
         .then((json) => {
           commentairesParEvenement.value = json;
         });
+
   }
 </script>
 
@@ -32,14 +37,26 @@
 <template>
   <!-- /////////////////////////////////////////////COMMENTAIRE///////////////////////////////////////////////////////////// -->
   <div id="pageCommentaire">
-
-      <p>Il y a {{ nbCommentaires }} commentaires dans la base.</p>
-      <div v-for="commentaire in commentaires" :key="commentaire.id_message">
-        <p>message : {{ commentaire.message }}</p>
-        <p>Id evenement : {{ commentaire.id_evenement }}</p>
-      </div>
+    <h2>Liste des {{ nbCommentaires }} commentaires :</h2>
+      <select ref="leCommentaire" v-model="state.leCommentaire" style="width:250px">
+        <option v-for="com in commentaires" :value="com">
+          {{ com.message }}
+        </option>
+      </select>
       <br />
       <br />
+    <h2>Modifier un commentaire :</h2>
+    <form id="modifCom" action="http://localhost:8080/Projet_Servlet/commentaires?operation=modifierCommentaire" method="post">
+      <label for="id_message">Id du message:</label>
+      <input type="text" id="id_message" name="id_message" required v-model="state.leCommentaire.id_message"><br>
+      <br />
+      <label for="nouveau_message">Nouveau message:</label>
+      <input type="text" id="nouveau_message" name="nouveau_message" required v-model="state.leCommentaire.message"><br>
+      <br />
+      <button type="submit">Modifier</button>
+    </form>
+    <br />
+    <br />
       <h2>Ajouter un nouveau commentaire :</h2>
       <form action="http://localhost:8080/Projet_Servlet/commentaires?operation=ajouterCommentaire" method="post">
         <label for="id_evenement">Id de l'évenement:</label>
@@ -62,16 +79,6 @@
         <br />
         <button type="submit">Supprimer</button>
       </form>
-    <h2>Modifier un commentaire :</h2>
-    <form action="http://localhost:8080/Projet_Servlet/commentaires?operation=modifierCommentaire" method="post">
-      <label for="id_message">Id du message:</label>
-      <input type="text" id="id_message" name="id_message" required><br>
-      <br />
-      <label for="nouveau_message">Nouveau message:</label>
-      <input type="text" id="nouveau_message" name="nouveau_message" required><br>
-      <br />
-      <button type="submit">Modifier</button>
-    </form>
     <br />
     <br />
     <h2>Afficher les commentaires de l'événement d'id:</h2>

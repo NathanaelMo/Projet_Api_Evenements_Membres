@@ -53,6 +53,7 @@ const submitModifierEvenement = () => {
       'Origin': 'http://localhost:5173/', // Spécifiez l'origine autorisée
       'Content-Type': 'application/json' // Spécifiez le type de contenu de la requête
     },
+    credentials: 'include',
     body: JSON.stringify({formData}) // Convertissez les données en JSON si nécessaire
   }).then(response => {
     console.log(response.data);
